@@ -37,26 +37,31 @@ export const projects: Project[] = [
     slug: "util",
     summary:
       "A compute scheduling and optimization platform for reducing electricity cost and carbon output for flexible workloads.",
-    longDescription: `Util is a placeholder project entry for a compute scheduling and optimization platform.
+    longDescription: `Util is a compute scheduling and optimization platform for reducing electricity cost and carbon output for flexible workloads.
 
-Replace this with a fuller case study covering the workload model, optimization approach, electricity pricing assumptions, carbon intensity data, scheduling constraints, and measured outcomes.`,
-    image: "/images/placeholder.svg",
-    tags: ["Optimization", "Energy Systems", "Compute Scheduling"],
+The platform models tradeoffs between cost, performance, location access, deployment timing, energy pricing, carbon emissions, and infrastructure constraints. It is designed as a real-world decision support tool for compute-intensive systems, using APIs and machine learning to forecast non-public price and emissions data.`,
+    image: "/images/util-dashboard.svg",
+    tags: ["AI Infrastructure", "Energy Optimization", "Compute Scheduling"],
     date: "2026",
     featured: true,
     links: [
-      { label: "Demo", url: "https://example.com/util" },
-      { label: "GitHub", url: "https://github.com/your-handle/util" },
+      {
+        label: "Demo Video",
+        url: "https://www.youtube.com/watch?v=LmOemcXx5ww",
+      },
+      { label: "Download", url: "https://utilcompute.com/" },
+      { label: "Live Demo", url: "https://util-ten-delta.vercel.app/" },
     ],
-    pdfs: [{ label: "Case study", path: "/pdfs/util-case-study.pdf" }],
+    pdfs: [],
     bullets: [
-      "Models flexible compute workloads against electricity price and carbon intensity signals.",
-      "Optimizes scheduling decisions across cost, emissions, latency, and workload constraints.",
-      "Designed as a decision-support layer for energy-aware AI and batch compute operations.",
+      "Leading development of a platform to optimize compute deployment across energy pricing, carbon emissions, and infrastructure constraints.",
+      "Models tradeoffs between cost, performance, location access, and deployment timing.",
+      "Designed as a real-world decision support tool for compute-intensive systems.",
+      "Uses APIs and machine learning to forecast non-public price and emissions data.",
     ],
     metrics: [
-      { label: "Cost model", value: "Placeholder" },
-      { label: "Carbon model", value: "Placeholder" },
+      { label: "Optimization target", value: "Cost + carbon" },
+      { label: "Forecasting", value: "ML + APIs" },
     ],
   },
   {

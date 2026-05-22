@@ -136,11 +136,10 @@ export default function Home() {
                   {profile.availability}
                 </p>
               </div>
-              <div className="flex flex-wrap gap-3">
-                <LinkButton href={`mailto:${contact.email}`} variant="primary">
-                  Email
+              <div className="flex lg:justify-end">
+                <LinkButton href="/contact" variant="primary">
+                  Contact
                 </LinkButton>
-                <LinkButton href="/contact">Contact page</LinkButton>
               </div>
             </div>
           </div>

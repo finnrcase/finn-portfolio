@@ -1,0 +1,14 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#F4F3F1"/>
+  <circle cx="256" cy="256" r="190" fill="url(#glow)"/>
+  <path d="M156 242C177 190 212 158 262 143C246 168 247 191 265 210C295 179 327 159 362 151C360 199 337 235 293 260C252 284 206 278 156 242Z" fill="#18A8E0"/>
+  <path d="M230 268C267 230 309 205 357 193C347 242 319 277 273 298C230 319 190 312 153 278C178 282 203 279 230 268Z" fill="#26C4A5"/>
+  <text x="256" y="338" fill="#5E646A" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="300" letter-spacing="1" text-anchor="middle">MALIBU DELIVERY</text>
+  <line x1="160" y1="354" x2="352" y2="354" stroke="#C6C6C4" stroke-width="2"/>
+  <defs>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 244) rotate(90) scale(170)">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F4F3F1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

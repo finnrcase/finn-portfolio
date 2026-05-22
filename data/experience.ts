@@ -93,4 +93,30 @@ export const experience: ExperienceItem[] = [
     links: [],
     image: "/images/kaiizen-foundation.svg",
   },
+  {
+    company: "Malibu Delivery Service LLC",
+    role: "Business Owner",
+    location: "Malibu, California, United States · Hybrid",
+    startDate: "Feb 2024",
+    endDate: "Present",
+    summary:
+      "Owner and operator of Malibu Delivery, a local delivery business spanning operations, strategy, financial management, hiring, KPI tracking, and daily execution.",
+    bullets: [
+      "Built and operated a local delivery business generating approximately $100K in annual revenue in 2025.",
+      "Hired and managed a team of 5 employees, including 2 full-time and 3 part-time team members.",
+      "Tracked and analyzed key business KPIs including revenue growth, customer acquisition, order volume, and unit economics to inform decision-making.",
+      "Managed budgeting, cost structure, and cash flow, balancing growth with profitability and operational constraints.",
+      "Built the company website and managed LLC formation, finances, and daily operations.",
+    ],
+    tools: [
+      "Operations",
+      "Strategy",
+      "Financial Management",
+      "KPI Tracking",
+      "Budgeting",
+      "Team Management",
+    ],
+    links: [{ label: "Website", url: "https://budelivery.com/" }],
+    image: "/images/malibu-delivery.svg",
+  },
 ];

@@ -137,7 +137,7 @@ The system ingests product data from PDFs, URLs, and receipts, extracts structur
     longDescription: `Solar Reach is a placeholder project entry.
 
 Replace this text with the full Solar Reach case study, including the problem, technical approach, system design, data sources, outcomes, and links.`,
-    image: "/images/placeholder.svg",
+    image: "/images/solarai.jpg",
     tags: ["Energy", "Decision Systems", "Optimization"],
     date: "2026",
     featured: true,

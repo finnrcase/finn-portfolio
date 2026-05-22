@@ -14,8 +14,8 @@ export function LinkButton({
 }) {
   const className =
     variant === "primary"
-      ? "inline-flex items-center rounded-md bg-foreground px-3 py-2 text-sm font-medium text-background transition hover:opacity-85"
-      : "inline-flex items-center rounded-md border border-line bg-panel px-3 py-2 text-sm font-medium text-foreground transition hover:border-foreground";
+      ? "inline-flex items-center rounded-md bg-accent px-3 py-2 text-sm font-medium text-background transition hover:bg-foreground"
+      : "inline-flex items-center rounded-md border border-line bg-panel px-3 py-2 text-sm font-medium text-foreground transition hover:border-accent hover:text-accent";
 
   if (href.startsWith("/")) {
     return (

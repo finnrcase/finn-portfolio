@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Container } from "@/components/container";
 import { ExperienceCard } from "@/components/experience-card";
 import { FeaturedWork } from "@/components/featured-work";
@@ -10,6 +11,7 @@ import { contact } from "@/data/contact";
 import { experience } from "@/data/experience";
 import { profile } from "@/data/profile";
 import { research } from "@/data/research";
+import { navItems } from "@/data/site";
 
 export default function Home() {
   const featuredResearch = research.slice(0, 2);
@@ -37,6 +39,20 @@ export default function Home() {
               <LinkButton href="/projects">Projects</LinkButton>
             </div>
           </div>
+          <nav
+            className="mt-10 flex gap-2 overflow-x-auto rounded-lg border border-line bg-panel p-2"
+            aria-label="Primary sections"
+          >
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="shrink-0 rounded-md border border-transparent px-4 py-2.5 text-sm font-medium text-muted transition hover:border-accent hover:bg-panel-muted hover:text-foreground"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
         </Container>
       </section>
 

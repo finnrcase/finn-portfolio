@@ -1,65 +1,132 @@
-import Image from "next/image";
+import { Container } from "@/components/container";
+import { ExperienceCard } from "@/components/experience-card";
+import { FeaturedWork } from "@/components/featured-work";
+import { LinkButton } from "@/components/link-button";
+import { PageShell } from "@/components/page-shell";
+import { ResearchCard } from "@/components/research-card";
+import { SectionHeader } from "@/components/section-header";
+import { Tag } from "@/components/tag";
+import { contact } from "@/data/contact";
+import { experience } from "@/data/experience";
+import { profile } from "@/data/profile";
+import { research } from "@/data/research";
 
 export default function Home() {
+  const featuredResearch = research.slice(0, 2);
+  const previewExperience = experience.slice(0, 2);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+    <PageShell>
+      <section className="border-b border-line py-20 sm:py-28">
+        <Container>
+          <div className="max-w-4xl">
+            <p className="font-mono text-xs font-medium uppercase tracking-[0.18em] text-accent">
+              {profile.headline}
+            </p>
+            <h1 className="mt-6 text-5xl font-semibold tracking-normal text-foreground sm:text-7xl">
+              {profile.name}
+            </h1>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-muted sm:text-xl sm:leading-9">
+              {profile.summary}
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <LinkButton href={profile.resumePdf} variant="primary">
+                Resume
+              </LinkButton>
+              <LinkButton href="/contact">Contact</LinkButton>
+              <LinkButton href="/projects">Projects</LinkButton>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <FeaturedWork />
+
+      <section className="border-y border-line bg-panel-muted py-14">
+        <Container>
+          <SectionHeader
+            label="Research"
+            title="Research preview"
+            description="Selected research artifacts and technical investigations."
+            action={<LinkButton href="/research">All research</LinkButton>}
+          />
+          <div className="grid gap-4">
+            {featuredResearch.map((item) => (
+              <ResearchCard key={item.title} item={item} />
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="py-14">
+        <Container>
+          <SectionHeader
+            label="Experience"
+            title="Experience preview"
+            description="Recent roles and operating context."
+            action={<LinkButton href="/experience">Full experience</LinkButton>}
+          />
+          <div>
+            {previewExperience.map((item, index) => (
+              <ExperienceCard
+                key={`${item.company}-${item.role}`}
+                item={item}
+                index={index}
+              />
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-y border-line bg-panel-muted py-14">
+        <Container>
+          <div className="grid gap-8 lg:grid-cols-[320px_1fr]">
+            <SectionHeader
+              label="About"
+              title="Short about"
+              description="A compact overview of focus areas and working interests."
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+            <div>
+              <div className="space-y-4 text-sm leading-7 text-muted">
+                {profile.bio.split("\n\n").map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
+              <div className="mt-6 flex flex-wrap gap-2">
+                {profile.focusAreas.map((area) => (
+                  <Tag key={area}>{area}</Tag>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="py-16">
+        <Container>
+          <div className="rounded-lg border border-line bg-panel p-6 sm:p-8">
+            <p className="font-mono text-xs font-medium uppercase tracking-[0.18em] text-accent">
+              Contact
+            </p>
+            <div className="mt-4 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
+              <div>
+                <h2 className="max-w-3xl text-3xl font-semibold tracking-normal sm:text-4xl">
+                  Let&apos;s talk about research, infrastructure, or quantitative systems.
+                </h2>
+                <p className="mt-4 max-w-2xl text-sm leading-6 text-muted">
+                  {profile.availability}
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                <LinkButton href={`mailto:${contact.email}`} variant="primary">
+                  Email
+                </LinkButton>
+                <LinkButton href="/contact">Contact page</LinkButton>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+    </PageShell>
   );
 }

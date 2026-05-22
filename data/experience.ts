@@ -66,4 +66,31 @@ export const experience: ExperienceItem[] = [
     links: [],
     image: "/images/ucsb-seal.svg",
   },
+  {
+    company: "Kaiizen Foundation",
+    role: "Platform Developer & Economic Strategy Lead",
+    location: "Economic Empowerment",
+    startDate: "Nov 2025",
+    endDate: "Present",
+    summary:
+      "Lead economic strategy, program development, and analytics platform work for the Male Mentorship Project, focused on improving economic mobility for young men in low-opportunity communities.",
+    bullets: [
+      "Lead economic research and labor market analysis to design mentorship frameworks aimed at improving economic mobility for young men in low-opportunity communities.",
+      "Develop data-driven program curriculum incorporating education attainment data, NEET statistics, and earnings trajectory modeling to guide career pathway decisions.",
+      "Design structured decision frameworks to help participants evaluate skill acquisition, internship targeting, and long-term income optimization strategies.",
+      "Build the analytics platform, a data system designed to track participant engagement, mentorship outcomes, and behavioral progress over time.",
+      "Develop analytical dashboards and cohort analysis tools to measure program effectiveness, retention, and long-term economic outcomes.",
+      "Apply quantitative analysis and economic modeling to inform program design, resource allocation, and strategic expansion.",
+    ],
+    tools: [
+      "Economic Strategy",
+      "Labor Market Analysis",
+      "Program Development",
+      "Analytics Platforms",
+      "Cohort Analysis",
+      "Economic Modeling",
+    ],
+    links: [],
+    image: "/images/kaiizen-foundation.svg",
+  },
 ];

@@ -9,22 +9,11 @@ export function Header() {
           <Link
             href="/"
             aria-label="Home"
-            className="group inline-flex size-9 items-center justify-center rounded-md border border-transparent text-muted transition duration-200 ease-out hover:-translate-y-0.5 hover:border-line hover:bg-panel hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            className="group inline-flex h-9 min-w-9 items-center justify-center rounded-md border border-line/70 bg-panel/50 px-2 font-mono text-sm font-semibold tracking-normal text-accent transition duration-200 ease-out hover:-translate-y-0.5 hover:border-accent/70 hover:bg-panel hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           >
-            <svg
-              aria-hidden="true"
-              className="size-4 transition duration-200 ease-out group-hover:scale-105"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="1.8"
-              viewBox="0 0 24 24"
-            >
-              <path d="m3 10.5 9-7 9 7" />
-              <path d="M5.5 9.5V20h13V9.5" />
-              <path d="M9.5 20v-6h5v6" />
-            </svg>
+            <span className="transition duration-200 ease-out group-hover:scale-105">
+              FC
+            </span>
           </Link>
           <Link
             href="/contact"

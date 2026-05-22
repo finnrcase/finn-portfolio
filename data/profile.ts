@@ -9,6 +9,10 @@ export type Profile = {
   resumePdf: string;
   availability: string;
   focusAreas: string[];
+  skills: {
+    category: string;
+    items: string[];
+  }[];
 };
 
 // Paste your top-level LinkedIn/Notion profile content here.
@@ -31,5 +35,31 @@ My portfolio focuses on technical projects, research, and tools that connect rig
     "Energy systems",
     "Financial modeling",
     "Quantitative decision-making",
+  ],
+  // Paste skill groups from your resume, LinkedIn, or Notion here.
+  // Keep categories short, then add/remove items as your toolkit changes.
+  skills: [
+    {
+      category: "Technical",
+      items: ["Python", "SQL", "Excel", "Data Analysis", "Relational Databases"],
+    },
+    {
+      category: "Analytical",
+      items: [
+        "Monte Carlo Simulation",
+        "Risk Modeling",
+        "Scenario Analysis",
+        "Forecasting",
+      ],
+    },
+    {
+      category: "Systems",
+      items: [
+        "Workflow Design",
+        "Process Optimization",
+        "Decision Systems",
+        "Automation",
+      ],
+    },
   ],
 };

@@ -99,6 +99,23 @@ export default function Home() {
                   <Tag key={area}>{area}</Tag>
                 ))}
               </div>
+              <div className="mt-8 grid gap-3 sm:grid-cols-3">
+                {profile.skills.map((skillGroup) => (
+                  <div
+                    key={skillGroup.category}
+                    className="rounded-lg border border-line bg-panel p-4"
+                  >
+                    <h3 className="font-mono text-xs font-medium uppercase tracking-[0.18em] text-accent">
+                      {skillGroup.category}
+                    </h3>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {skillGroup.items.map((skill) => (
+                        <Tag key={skill}>{skill}</Tag>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </Container>

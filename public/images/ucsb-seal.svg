@@ -1,0 +1,14 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#050505"/>
+  <circle cx="256" cy="256" r="218" stroke="#003660" stroke-width="14"/>
+  <circle cx="256" cy="256" r="176" stroke="#003660" stroke-width="6"/>
+  <g fill="#003660" font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+    <text x="256" y="86" font-size="31" font-weight="700" letter-spacing="6">UNIVERSITY OF CALIFORNIA</text>
+    <text x="256" y="438" font-size="39" font-weight="700" letter-spacing="7">SANTA BARBARA</text>
+    <text x="256" y="273" font-size="56" font-weight="700">UCSB</text>
+    <text x="256" y="315" font-size="18" font-weight="700" letter-spacing="5">LET THERE BE LIGHT</text>
+  </g>
+  <path d="M164 186h184v136H164V186Z" stroke="#003660" stroke-width="8"/>
+  <path d="M256 158v192M164 186c36 8 65 21 92 42 27-21 56-34 92-42M164 322c36 8 65 20 92 42 27-22 56-34 92-42" stroke="#003660" stroke-width="6"/>
+  <path d="M256 117l16 43 46 2-36 28 12 45-38-25-38 25 12-45-36-28 46-2 16-43Z" fill="#003660"/>
+</svg>

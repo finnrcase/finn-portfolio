@@ -49,4 +49,21 @@ export const experience: ExperienceItem[] = [
     links: [],
     image: "/images/rmr-wealth.svg",
   },
+  {
+    company: "UC Santa Barbara",
+    role: "Teaching Assistant - Game Theory",
+    location: "Hybrid",
+    startDate: "Sep 2025",
+    endDate: "Present",
+    summary:
+      "Part-time teaching assistant role supporting Game Theory students through problem-set guidance, project feedback, office hours, and exam review with an emphasis on formal modeling and quantitative reasoning.",
+    bullets: [
+      "Supported students in solving problem sets and project work, reinforcing formal modeling and quantitative reasoning.",
+      "Held office hours to clarify complex theoretical concepts and improve analytical precision.",
+      "Reviewed exams and projects to ensure clarity of argument and precision in modeling.",
+    ],
+    tools: ["Game Theory", "Analytical Problem Solving", "Formal Modeling"],
+    links: [],
+    image: "/images/ucsb-seal.svg",
+  },
 ];

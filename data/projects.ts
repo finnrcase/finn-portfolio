@@ -162,32 +162,29 @@ The system integrates market data and external signals, supports scenario analys
     title: "Financial Risk Engine",
     slug: "financial-risk-engine",
     summary:
-      "A Python-based portfolio simulation platform for modeling volatility, downside risk, tail exposure, and stress scenarios.",
-    longDescription: `Financial Risk Engine is a placeholder entry for a Python-based portfolio risk simulation platform.
+      "A Python-based platform for modeling portfolio risk, return distributions, downside exposure, Monte Carlo simulations, and stress scenarios.",
+    longDescription: `Financial Risk Engine is a Python-based portfolio simulation platform for modeling portfolio risk, return distributions, downside exposure, and stress scenarios.
 
-Replace this with details about the portfolio model, return assumptions, volatility estimation, drawdown analysis, tail-risk methods, and stress-test scenarios.`,
-    image: "/images/placeholder.svg",
-    tags: ["Python", "Risk Analysis", "Portfolio Simulation"],
+The platform implements Monte Carlo simulation and stress testing to support risk-aware capital allocation decisions. It provides a dashboard for portfolio setup, correlation assumptions, risk attribution, scenario comparison, and optimization.`,
+    image: "/images/financial-risk-engine.svg",
+    tags: ["Python", "Monte Carlo", "Portfolio Risk"],
     date: "2026",
     featured: true,
     links: [
-      { label: "Demo", url: "https://example.com/financial-risk-engine" },
       {
-        label: "GitHub",
-        url: "https://github.com/your-handle/financial-risk-engine",
+        label: "Live App",
+        url: "https://financial-risk-engine-lrmaf4egwyhpoyrw7ivtmw.streamlit.app/",
       },
     ],
-    pdfs: [
-      { label: "Technical note", path: "/pdfs/financial-risk-engine.pdf" },
-    ],
+    pdfs: [],
     bullets: [
-      "Models portfolio volatility, drawdowns, downside risk, and tail exposure.",
-      "Runs stress scenarios and simulations to evaluate sensitivity under market shocks.",
-      "Designed for reproducible quantitative risk analysis and portfolio decision support.",
+      "Developed a Python-based platform for modeling portfolio risk, return distributions, and downside exposure.",
+      "Implemented Monte Carlo simulation and stress testing.",
+      "Designed to support risk-aware capital allocation decisions.",
     ],
     metrics: [
-      { label: "Risk metrics", value: "Placeholder" },
-      { label: "Scenarios", value: "Placeholder" },
+      { label: "Simulation method", value: "Monte Carlo" },
+      { label: "Decision focus", value: "Capital allocation" },
     ],
   },
 ];

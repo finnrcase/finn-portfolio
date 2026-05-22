@@ -7,7 +7,6 @@ This site is powered by TypeScript data files in `/data`. Most updates do not re
 - Projects: `/data/projects.ts`
 - Research: `/data/research.ts`
 - Experience: `/data/experience.ts`
-- Writing: `/data/writing.ts`
 
 After editing, run:
 
@@ -100,7 +99,7 @@ Use complete URLs that start with `https://`.
 
 ## Mark Something Featured
 
-Projects and writing posts have a `featured` field.
+Projects have a `featured` field.
 
 ```ts
 featured: true
@@ -236,32 +235,6 @@ If there are no links, use:
 links: []
 ```
 
-## Add A New Writing Post
-
-Open `/data/writing.ts` and paste a new object inside the `writing` array.
-
-### New Writing Post Template
-
-```ts
-{
-  title: "Post Title",
-  slug: "post-title",
-  summary:
-    "One short paragraph describing the topic, audience, and why the piece matters.",
-  body: `Paste a longer excerpt, draft, or Notion page content here.
-
-If the full post lives elsewhere, keep this as a teaser and add the external URL in links.`,
-  date: "2026-01-15",
-  publication: "Personal site",
-  tags: ["Engineering", "Research"],
-  links: [
-    { label: "Read", url: "https://example.com/post" },
-  ],
-  image: "/images/placeholder.svg",
-  featured: false,
-}
-```
-
 ## Quick Editing Rules
 
 - Keep every object separated by a comma.
@@ -269,4 +242,4 @@ If the full post lives elsewhere, keep this as a teaser and add the external URL
 - Use backticks for multi-paragraph text.
 - Use empty arrays when you have nothing to add yet: `links: []`.
 - Use `/images/placeholder.svg` until the final image is ready.
-- Use unique slugs for projects and writing posts.
+- Use unique slugs for projects.

@@ -123,23 +123,13 @@ export default function Home() {
       <section className="section-reveal py-16">
         <Container>
           <div className="rounded-lg border border-line bg-panel p-6 sm:p-8">
-            <p className="font-mono text-xs font-medium uppercase tracking-[0.18em] text-accent">
-              Contact
-            </p>
-            <div className="mt-4 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
-              <div>
-                <h2 className="max-w-3xl text-3xl font-semibold tracking-normal sm:text-4xl">
-                  Let&apos;s talk about research, infrastructure, or quantitative systems.
-                </h2>
-                <p className="mt-4 max-w-2xl text-sm leading-6 text-muted">
-                  {profile.availability}
-                </p>
-              </div>
-              <div className="flex lg:justify-end">
-                <LinkButton href="/contact" variant="primary">
-                  Contact
-                </LinkButton>
-              </div>
+            <div className="flex items-center justify-between gap-4">
+              <p className="font-mono text-xs font-medium uppercase tracking-[0.18em] text-accent">
+                Contact
+              </p>
+              <LinkButton href="/contact" variant="primary">
+                Contact
+              </LinkButton>
             </div>
           </div>
         </Container>

@@ -61,18 +61,23 @@ export function Footer() {
               ))}
             </div>
             <div className="flex flex-wrap gap-2 md:justify-end">
-              {footerLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  aria-label={link.label}
-                  className="footer-link inline-flex size-9 items-center justify-center rounded-md border border-line bg-panel text-muted"
-                  rel={link.href.startsWith("http") ? "noreferrer" : undefined}
-                  target={link.href.startsWith("http") ? "_blank" : undefined}
-                >
-                  {link.icon}
-                </a>
-              ))}
+              {footerLinks.map((link) => {
+                const opensNewTab =
+                  link.href.startsWith("http") || link.label === "Resume";
+
+                return (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    aria-label={link.label}
+                    className="footer-link inline-flex size-9 items-center justify-center rounded-md border border-line bg-panel text-muted"
+                    rel={opensNewTab ? "noopener noreferrer" : undefined}
+                    target={opensNewTab ? "_blank" : undefined}
+                  >
+                    {link.icon}
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>

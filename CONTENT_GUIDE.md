@@ -79,6 +79,22 @@ or for project PDFs:
 pdfs: [{ label: "Case study", path: "/pdfs/my-case-study.pdf" }]
 ```
 
+## Update Resume
+
+Replace this file whenever you update your resume:
+
+```text
+/public/pdfs/resume.pdf
+```
+
+The site uses this fixed public path automatically:
+
+```text
+/pdfs/resume.pdf
+```
+
+You do not need to update page components when the resume changes. Keep the filename as `resume.pdf` and replace the existing file.
+
 ## Add Links
 
 Links are arrays of `{ label, url }` objects. Use them for GitHub, Devpost, LinkedIn, demos, papers, project pages, videos, and external sites.

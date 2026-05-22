@@ -30,7 +30,7 @@ export default function Home() {
               {profile.summary}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <LinkButton href={profile.resumePdf} variant="primary">
+              <LinkButton href={profile.resumePdf} variant="primary" newTab>
                 Resume
               </LinkButton>
               <LinkButton href="/contact">Contact</LinkButton>

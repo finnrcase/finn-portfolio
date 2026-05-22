@@ -14,8 +14,8 @@ export function LinkButton({
 }) {
   const className =
     variant === "primary"
-      ? "inline-flex items-center rounded-md bg-accent px-3 py-2 text-sm font-medium text-background transition hover:bg-foreground"
-      : "inline-flex items-center rounded-md border border-line bg-panel px-3 py-2 text-sm font-medium text-foreground transition hover:border-accent hover:text-accent";
+      ? "inline-flex items-center rounded-md bg-accent px-3 py-2 text-sm font-medium text-background transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-foreground"
+      : "inline-flex items-center rounded-md border border-line bg-panel px-3 py-2 text-sm font-medium text-foreground transition duration-200 ease-out hover:-translate-y-0.5 hover:border-accent hover:text-accent";
 
   if (href.startsWith("/")) {
     return (

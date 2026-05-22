@@ -1,17 +1,16 @@
-import Link from "next/link";
 import { Container } from "@/components/container";
 import { ExperienceCard } from "@/components/experience-card";
 import { FeaturedWork } from "@/components/featured-work";
 import { LinkButton } from "@/components/link-button";
 import { PageShell } from "@/components/page-shell";
 import { ResearchCard } from "@/components/research-card";
+import { SectionNav } from "@/components/section-nav";
 import { SectionHeader } from "@/components/section-header";
 import { Tag } from "@/components/tag";
 import { contact } from "@/data/contact";
 import { experience } from "@/data/experience";
 import { profile } from "@/data/profile";
 import { research } from "@/data/research";
-import { navItems } from "@/data/site";
 
 export default function Home() {
   const featuredResearch = research.slice(0, 2);
@@ -21,7 +20,7 @@ export default function Home() {
     <PageShell>
       <section className="border-b border-line py-20 sm:py-28">
         <Container>
-          <div className="max-w-4xl">
+          <div className="content-reveal max-w-4xl">
             <p className="font-mono text-xs font-medium uppercase tracking-[0.18em] text-accent">
               {profile.headline}
             </p>
@@ -39,20 +38,7 @@ export default function Home() {
               <LinkButton href="/projects">Projects</LinkButton>
             </div>
           </div>
-          <nav
-            className="mt-10 flex gap-2 overflow-x-auto rounded-lg border border-line bg-panel p-2"
-            aria-label="Primary sections"
-          >
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="shrink-0 rounded-md border border-transparent px-4 py-2.5 text-sm font-medium text-muted transition hover:border-accent hover:bg-panel-muted hover:text-foreground"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
+          <SectionNav className="mt-10" />
         </Container>
       </section>
 

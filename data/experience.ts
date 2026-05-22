@@ -47,7 +47,7 @@ export const experience: ExperienceItem[] = [
       "Series 65",
     ],
     links: [],
-    image: "/images/rmr-wealth.svg",
+    image: "/images/RMR.png",
   },
   {
     company: "UC Santa Barbara",
@@ -64,7 +64,7 @@ export const experience: ExperienceItem[] = [
     ],
     tools: ["Game Theory", "Analytical Problem Solving", "Formal Modeling"],
     links: [],
-    image: "/images/ucsb-seal.svg",
+    image: "/images/UC_Santa_Barbara_Seal.png",
   },
   {
     company: "Kaiizen Foundation",
@@ -91,7 +91,7 @@ export const experience: ExperienceItem[] = [
       "Economic Modeling",
     ],
     links: [],
-    image: "/images/kaiizen-foundation.svg",
+    image: "/images/kaiizen.png",
   },
   {
     company: "Malibu Delivery Service LLC",
@@ -117,6 +117,6 @@ export const experience: ExperienceItem[] = [
       "Team Management",
     ],
     links: [{ label: "Website", url: "https://budelivery.com/" }],
-    image: "/images/malibu-delivery.svg",
+    image: "/images/malibudelivery.jpg",
   },
 ];

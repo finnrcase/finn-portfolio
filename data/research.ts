@@ -39,7 +39,7 @@ export const research: ResearchItem[] = [
       "Monte Carlo Simulation",
       "Python",
     ],
-    image: "/images/researchgraph.jpg",
+    image: "/images/researchgraph.png",
     pdf:
       "https://zenodo.org/records/20320804/files/A%20Quantitative%20Model%20of%20AI%20Data%20Center%20Electricity%20Demand%2C%20Carbon%20Intensity%2C%20and%20Policy%20Tradeoffs%20%281%29.pdf",
     links: [

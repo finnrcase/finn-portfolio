@@ -40,7 +40,7 @@ export const projects: Project[] = [
     longDescription: `Util is a compute scheduling and optimization platform for reducing electricity cost and carbon output for flexible workloads.
 
 The platform models tradeoffs between cost, performance, location access, deployment timing, energy pricing, carbon emissions, and infrastructure constraints. It is designed as a real-world decision support tool for compute-intensive systems, using APIs and machine learning to forecast non-public price and emissions data.`,
-    image: "/images/util-dashboard.svg",
+    image: "/images/utildemo.png",
     tags: ["AI Infrastructure", "Energy Optimization", "Compute Scheduling"],
     date: "2026",
     featured: true,
@@ -72,7 +72,7 @@ The platform models tradeoffs between cost, performance, location access, deploy
     longDescription: `This placeholder entry represents a quantitative research project on AI infrastructure electricity demand.
 
 Replace this with the modeling framework, assumptions, scenario design, carbon accounting approach, policy tradeoff analysis, and key findings.`,
-    image: "/images/placeholder.svg",
+    image: "/images/researchgraph.png",
     tags: ["AI Infrastructure", "Energy Demand", "Policy Modeling"],
     date: "2026",
     featured: false,
@@ -107,7 +107,7 @@ Replace this with the modeling framework, assumptions, scenario design, carbon a
     longDescription: `AI DesignOps Automation Platform is an end-to-end automation system built for a local business to replace manual product data entry and vendor follow-ups.
 
 The system ingests product data from PDFs, URLs, and receipts, extracts structured fields, and identifies missing information such as dimensions or pricing. When product data is incomplete, an AI voice agent automatically calls vendors to retrieve missing details in real time.`,
-    image: "/images/placeholder.svg",
+    image: "/images/aiingestionpic.png",
     tags: ["AI Automation", "Data Ingestion", "Voice Agents"],
     date: "2026",
     featured: true,
@@ -137,7 +137,7 @@ The system ingests product data from PDFs, URLs, and receipts, extracts structur
     longDescription: `Solar Reach is a placeholder project entry.
 
 Replace this text with the full Solar Reach case study, including the problem, technical approach, system design, data sources, outcomes, and links.`,
-    image: "/images/solarai.jpg",
+    image: "/images/solarai.png",
     tags: ["Energy", "Decision Systems", "Optimization"],
     date: "2026",
     featured: true,
@@ -161,7 +161,7 @@ Replace this text with the full Solar Reach case study, including the problem, t
     longDescription: `Asset Intelligence Workbench is a SQL-based platform for structured financial analysis and decision support.
 
 The system integrates market data and external signals, supports scenario analysis and sentiment integration, and outputs multi-page reports with risk metrics, simulations, and decision-ready insights.`,
-    image: "/images/asset-intelligence-briefing.svg",
+    image: "/images/AssetIntelligenceWorkbench.png",
     tags: ["Financial Modeling", "SQL", "Decision Support"],
     date: "2026",
     featured: false,
@@ -190,7 +190,7 @@ The system integrates market data and external signals, supports scenario analys
     longDescription: `Financial Risk Engine is a Python-based portfolio simulation platform for modeling portfolio risk, return distributions, downside exposure, and stress scenarios.
 
 The platform implements Monte Carlo simulation and stress testing to support risk-aware capital allocation decisions. It provides a dashboard for portfolio setup, correlation assumptions, risk attribution, scenario comparison, and optimization.`,
-    image: "/images/financial-risk-engine.svg",
+    image: "/images/financial%20risk%20engine.png",
     tags: ["Python", "Monte Carlo", "Portfolio Risk"],
     date: "2026",
     featured: false,

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Container } from "@/components/container";
 import { PageHeader, PageShell } from "@/components/page-shell";
 import { contact } from "@/data/contact";
-import { profile } from "@/data/profile";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -30,12 +29,6 @@ export default function ContactPage() {
             >
               {contact.email}
             </a>
-            <p className="mt-5 max-w-2xl text-sm leading-6 text-muted">
-              {contact.intro}
-            </p>
-            <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
-              {profile.availability}
-            </p>
           </div>
           <div className="rounded-lg border border-line bg-panel p-5">
             <p className="font-mono text-xs uppercase tracking-[0.16em] text-muted">

@@ -23,7 +23,7 @@ export const profile: Profile = {
   role: "Quantitative Economics • AI Infrastructure • Systems Optimization",
   location: "United States",
   summary:
-    "I build research and tools at the intersection of AI infrastructure, energy systems, financial modeling, and quantitative decision-making.",
+    "Building optimization systems and quantitative research tools at the intersection of AI infrastructure, energy markets, and decision-making under uncertainty.",
   bio: `I work across quantitative economics, AI infrastructure, systems optimization, and applied research.
 
 My portfolio focuses on technical projects, research, and tools that connect rigorous modeling with practical systems. I am especially interested in infrastructure, energy, financial decision-making, and the analytical workflows that make complex systems easier to understand and improve.`,

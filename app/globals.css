@@ -23,9 +23,43 @@
 }
 
 body {
-  background: var(--background);
+  position: relative;
+  background:
+    radial-gradient(
+      circle at 72% 8%,
+      color-mix(in srgb, var(--accent) 18%, transparent) 0,
+      transparent 34rem
+    ),
+    radial-gradient(circle at 14% 18%, rgba(143, 67, 38, 0.1), transparent 26rem),
+    var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(245, 242, 234, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 242, 234, 0.035) 1px, transparent 1px),
+    radial-gradient(circle at center, rgba(245, 242, 234, 0.06) 0 1px, transparent 1px);
+  background-position:
+    center,
+    center,
+    0 0;
+  background-size:
+    56px 56px,
+    56px 56px,
+    18px 18px;
+  content: "";
+  opacity: 0.22;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
 }
 
 ::selection {

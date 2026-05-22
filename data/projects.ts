@@ -130,27 +130,26 @@ The system ingests product data from PDFs, URLs, and receipts, extracts structur
     ],
   },
   {
-    title: "Solar Reach",
+    title: "SolarReach - Sales Automation",
     slug: "solar-reach",
     summary:
-      "Placeholder project entry for Solar Reach. Replace this summary with the final project description, links, and image when ready.",
-    longDescription: `Solar Reach is a placeholder project entry.
-
-Replace this text with the full Solar Reach case study, including the problem, technical approach, system design, data sources, outcomes, and links.`,
+      "An AI-powered solar prospecting pipeline that identifies homes, estimates energy costs and solar savings, generates personalized outreach, and routes qualified leads to local providers.",
+    longDescription: `Built an AI-powered solar prospecting pipeline that identifies homes from ZIP codes, estimates energy costs and solar savings using live utility data, generates personalized outreach with 3D solar home renders, and routes qualified leads to local solar providers for referral commissions.`,
     image: "/images/solarai.png",
-    tags: ["Energy", "Decision Systems", "Optimization"],
+    tags: ["Solar Sales", "AI Automation", "Lead Qualification"],
     date: "2026",
     featured: true,
     links: [],
     pdfs: [],
     bullets: [
-      "Replace this bullet with the first Solar Reach accomplishment.",
-      "Replace this bullet with the technical approach or system design.",
-      "Replace this bullet with measurable outcomes, users, or project impact.",
+      "Automated property identification and energy-cost prediction pipeline.",
+      "Integrated utility and energy APIs for solar savings estimation.",
+      "Generated AI-written outreach and Blender-based 3D solar visualizations for individual clients.",
+      "Built automated lead qualification and referral routing system for solar sales partners.",
     ],
     metrics: [
-      { label: "Status", value: "Placeholder" },
-      { label: "Focus", value: "Solar systems" },
+      { label: "Pipeline", value: "ZIP to qualified lead" },
+      { label: "Output", value: "AI outreach + 3D renders" },
     ],
   },
   {

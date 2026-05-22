@@ -75,7 +75,7 @@ Replace this with the modeling framework, assumptions, scenario design, carbon a
     image: "/images/placeholder.svg",
     tags: ["AI Infrastructure", "Energy Demand", "Policy Modeling"],
     date: "2026",
-    featured: true,
+    featured: false,
     links: [
       { label: "Research page", url: "https://example.com/ai-demand-research" },
       {
@@ -130,6 +130,30 @@ The system ingests product data from PDFs, URLs, and receipts, extracts structur
     ],
   },
   {
+    title: "Solar Reach",
+    slug: "solar-reach",
+    summary:
+      "Placeholder project entry for Solar Reach. Replace this summary with the final project description, links, and image when ready.",
+    longDescription: `Solar Reach is a placeholder project entry.
+
+Replace this text with the full Solar Reach case study, including the problem, technical approach, system design, data sources, outcomes, and links.`,
+    image: "/images/placeholder.svg",
+    tags: ["Energy", "Decision Systems", "Optimization"],
+    date: "2026",
+    featured: true,
+    links: [],
+    pdfs: [],
+    bullets: [
+      "Replace this bullet with the first Solar Reach accomplishment.",
+      "Replace this bullet with the technical approach or system design.",
+      "Replace this bullet with measurable outcomes, users, or project impact.",
+    ],
+    metrics: [
+      { label: "Status", value: "Placeholder" },
+      { label: "Focus", value: "Solar systems" },
+    ],
+  },
+  {
     title: "Asset Intelligence Workbench",
     slug: "asset-intelligence-workbench",
     summary:
@@ -140,7 +164,7 @@ The system integrates market data and external signals, supports scenario analys
     image: "/images/asset-intelligence-briefing.svg",
     tags: ["Financial Modeling", "SQL", "Decision Support"],
     date: "2026",
-    featured: true,
+    featured: false,
     links: [
       {
         label: "Live App",
@@ -169,7 +193,7 @@ The platform implements Monte Carlo simulation and stress testing to support ris
     image: "/images/financial-risk-engine.svg",
     tags: ["Python", "Monte Carlo", "Portfolio Risk"],
     date: "2026",
-    featured: true,
+    featured: false,
     links: [
       {
         label: "Live App",
@@ -198,7 +222,7 @@ The system dynamically optimizes calorie intake, macro allocation, recovery mana
     image: "/images/performanceos-dashboard.svg",
     tags: ["Performance Analytics", "API Integration", "Optimization"],
     date: "2026",
-    featured: true,
+    featured: false,
     links: [],
     pdfs: [],
     bullets: [

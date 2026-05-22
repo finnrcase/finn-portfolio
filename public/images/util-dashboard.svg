@@ -1,0 +1,90 @@
+<svg width="1362" height="1250" viewBox="0 0 1362 1250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1362" height="1250" fill="#070812"/>
+  <rect x="4" y="3" width="300" height="1244" rx="28" fill="url(#sidebar)" stroke="#3A3450"/>
+  <rect x="334" y="28" width="982" height="148" rx="28" fill="#0D0D18" stroke="#2E2B3D"/>
+  <text x="358" y="60" fill="#C8B9FF" font-family="Arial, sans-serif" font-size="12" letter-spacing="7">DASHBOARD</text>
+  <text x="358" y="102" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="24" font-weight="700">Optimizer</text>
+  <rect x="359" y="125" width="174" height="30" rx="15" fill="#1B1A25" stroke="#393749"/>
+  <text x="373" y="145" fill="#A8A29E" font-family="Arial, sans-serif" font-size="12">API</text>
+  <text x="407" y="145" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="13">configured-absolute</text>
+  <rect x="541" y="125" width="280" height="30" rx="15" fill="#1B1A25" stroke="#393749"/>
+  <text x="555" y="145" fill="#A8A29E" font-family="Arial, sans-serif" font-size="12">Backend</text>
+  <text x="612" y="145" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="13">https://util-backend.onrender.com</text>
+  <rect x="333" y="204" width="199" height="56" rx="18" fill="url(#button)"/>
+  <text x="358" y="239" fill="#0B0B0A" font-family="Arial, sans-serif" font-size="16" font-weight="700">+ Run Optimization</text>
+  <rect x="334" y="280" width="597" height="949" rx="28" fill="#11121C" stroke="#9C7CFF"/>
+  <rect x="955" y="204" width="360" height="624" rx="28" fill="#11121C" stroke="#9C7CFF"/>
+  <text x="363" y="313" fill="#B799FF" font-family="Arial, sans-serif" font-size="11" letter-spacing="6">OPTIMIZER</text>
+  <text x="363" y="342" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="18" font-weight="700">Optimization Control Center</text>
+  <line x1="334" y1="370" x2="931" y2="370" stroke="#8A78B5"/>
+  <text x="363" y="410" fill="#CFC6E8" font-family="Arial, sans-serif" font-size="11" letter-spacing="6">WORKLOAD</text>
+  <line x1="363" y1="427" x2="902" y2="427" stroke="#F5F2EA"/>
+  <text x="363" y="458" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="14">Compute Hours Required</text>
+  <text x="641" y="458" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="14">Machine Wattage (Watts)</text>
+  <rect x="363" y="472" width="262" height="50" rx="18" fill="#10131F" stroke="#323447"/>
+  <rect x="641" y="472" width="262" height="50" rx="18" fill="#10131F" stroke="#323447"/>
+  <text x="380" y="503" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="18">4</text>
+  <text x="658" y="503" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="18">1000</text>
+  <text x="363" y="557" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="14">Optimization Objective</text>
+  <rect x="363" y="571" width="539" height="50" rx="18" fill="#10131F" stroke="#323447"/>
+  <text x="380" y="601" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="16">Minimize Cost</text>
+  <text x="363" y="653" fill="#CFC6E8" font-family="Arial, sans-serif" font-size="11" letter-spacing="5">LOCATION &amp; TIMING</text>
+  <line x1="363" y1="668" x2="902" y2="668" stroke="#F5F2EA"/>
+  <rect x="363" y="714" width="262" height="50" rx="18" fill="#10131F" stroke="#323447"/>
+  <rect x="641" y="714" width="262" height="50" rx="18" fill="#10131F" stroke="#323447"/>
+  <text x="380" y="745" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="18">90012</text>
+  <text x="658" y="745" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="18">05/22/2026, 03:56 AM</text>
+  <rect x="363" y="782" width="539" height="40" rx="20" fill="#191726" stroke="#F5F2EA"/>
+  <text x="380" y="807" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="13">ZIP-driven region and pricing lookup is active.</text>
+  <text x="363" y="855" fill="#CFC6E8" font-family="Arial, sans-serif" font-size="11" letter-spacing="5">FORECAST SETTINGS</text>
+  <line x1="363" y1="872" x2="902" y2="872" stroke="#F5F2EA"/>
+  <rect x="363" y="895" width="262" height="190" rx="20" fill="#1A1A24" stroke="#3F3B51"/>
+  <rect x="641" y="895" width="262" height="190" rx="20" fill="#1A1A24" stroke="#3F3B51"/>
+  <rect x="381" y="1004" width="226" height="65" rx="13" fill="#11111B" stroke="#393749"/>
+  <circle cx="399" cy="1028" r="6" fill="#B799FF" stroke="#E5D8FF"/>
+  <text x="418" y="1027" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="14">Extended (Historical-</text>
+  <text x="418" y="1051" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="14">Pattern Estimate)</text>
+  <rect x="658" y="930" width="226" height="45" rx="13" fill="#11111B" stroke="#393749"/>
+  <circle cx="679" cy="954" r="7" fill="#B799FF" stroke="#E5D8FF"/>
+  <text x="698" y="959" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="14">Flexible</text>
+  <text x="984" y="237" fill="#B799FF" font-family="Arial, sans-serif" font-size="11" letter-spacing="5">STATUS</text>
+  <text x="984" y="265" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="19" font-weight="700">Optimizer Status</text>
+  <line x1="956" y1="294" x2="1315" y2="294" stroke="#8A78B5"/>
+  <rect x="984" y="323" width="302" height="111" rx="20" fill="#1A1A24" stroke="#3F3B51"/>
+  <text x="1001" y="355" fill="#CFC6E8" font-family="Arial, sans-serif" font-size="11" letter-spacing="5">CURRENT MODE</text>
+  <text x="1001" y="384" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="18" font-weight="700">Flexible interval scheduling</text>
+  <text x="1001" y="413" fill="#A8A29E" font-family="Arial, sans-serif" font-size="14">Extended mode active</text>
+  <rect x="26" y="28" width="258" height="113" rx="24" fill="url(#logoCard)" stroke="#574B77"/>
+  <rect x="44" y="45" width="79" height="79" rx="22" fill="#4A3D67" stroke="#6E5B99"/>
+  <path d="M89 60L67 88H82L72 111L104 75H88L96 60H89Z" fill="#9670FF"/>
+  <text x="160" y="97" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="32" font-weight="800" letter-spacing="7">UTIL</text>
+  <text x="35" y="185" fill="#CFC6E8" font-family="Arial, sans-serif" font-size="12" letter-spacing="6">WORKSPACE</text>
+  <rect x="26" y="206" width="254" height="65" rx="20" fill="url(#activeNav)" stroke="#654CB2"/>
+  <text x="91" y="242" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="14">Optimizer</text>
+  <text x="91" y="318" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="14">Forecast Visuals</text>
+  <text x="91" y="395" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="14">Savings Analysis</text>
+  <text x="91" y="470" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="14">Power Estimator</text>
+  <rect x="26" y="1110" width="258" height="120" rx="24" fill="#18202A" stroke="#3A3A46"/>
+  <text x="43" y="1139" fill="#CFC6E8" font-family="Arial, sans-serif" font-size="12" letter-spacing="5">SIGNALS</text>
+  <text x="43" y="1172" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="14">Price</text>
+  <text x="43" y="1207" fill="#F5F2EA" font-family="Arial, sans-serif" font-size="14">Carbon</text>
+  <defs>
+    <linearGradient id="sidebar" x1="4" y1="3" x2="303" y2="1247" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A1747"/>
+      <stop offset="0.48" stop-color="#080712"/>
+      <stop offset="1" stop-color="#07101A"/>
+    </linearGradient>
+    <linearGradient id="button" x1="333" y1="204" x2="532" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E4C5FF"/>
+      <stop offset="1" stop-color="#8FEFF3"/>
+    </linearGradient>
+    <linearGradient id="logoCard" x1="26" y1="28" x2="284" y2="141" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B255F"/>
+      <stop offset="1" stop-color="#2A2542"/>
+    </linearGradient>
+    <linearGradient id="activeNav" x1="26" y1="206" x2="280" y2="271" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4A2B86"/>
+      <stop offset="1" stop-color="#0B2630"/>
+    </linearGradient>
+  </defs>
+</svg>

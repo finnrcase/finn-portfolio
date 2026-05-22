@@ -1,0 +1,61 @@
+<svg width="890" height="708" viewBox="0 0 890 708" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="890" height="708" fill="#F8FAFC"/>
+  <text x="27" y="41" fill="#49647F" font-family="Georgia, serif" font-size="15" letter-spacing="0.5">ASSET BRIEFING</text>
+  <text x="27" y="88" fill="#061B33" font-family="Arial, sans-serif" font-size="46" font-weight="800">Apple Inc.</text>
+  <text x="27" y="121" fill="#214464" font-family="Arial, sans-serif" font-size="22">AAPL</text>
+  <text x="27" y="171" fill="#405976" font-family="Georgia, serif" font-size="16">Historical market performance, downside risk, and forward scenario analysis</text>
+  <text x="27" y="196" fill="#405976" font-family="Georgia, serif" font-size="16">prepared from the local finance analytics workbench.</text>
+
+  <g fill="#F8FAFC" stroke="#DDE4EA" stroke-width="5">
+    <rect x="23" y="207" width="201" height="67"/>
+    <rect x="236" y="207" width="201" height="67"/>
+    <rect x="449" y="207" width="201" height="67"/>
+    <rect x="662" y="207" width="201" height="67"/>
+    <rect x="23" y="309" width="270" height="94"/>
+    <rect x="308" y="309" width="270" height="94"/>
+    <rect x="593" y="309" width="270" height="94"/>
+    <rect x="23" y="423" width="270" height="94"/>
+    <rect x="308" y="423" width="270" height="94"/>
+    <rect x="593" y="423" width="270" height="94"/>
+    <rect x="23" y="543" width="840" height="165"/>
+  </g>
+
+  <g font-family="Arial, sans-serif">
+    <text x="40" y="230" fill="#60758E" font-size="11">GENERATED</text>
+    <text x="40" y="247" fill="#061B33" font-size="14" font-weight="700">2026-03-20 05:51</text>
+    <text x="253" y="230" fill="#60758E" font-size="11">COVERAGE</text>
+    <text x="253" y="247" fill="#061B33" font-size="14" font-weight="700">2025-03-19 to 2026-03-19</text>
+    <text x="466" y="230" fill="#60758E" font-size="11">SOURCE</text>
+    <text x="466" y="247" fill="#061B33" font-size="14" font-weight="700">yfinance</text>
+    <text x="679" y="230" fill="#60758E" font-size="11">RECORDS</text>
+    <text x="679" y="247" fill="#061B33" font-size="14" font-weight="700">252</text>
+
+    <text x="43" y="333" fill="#60758E" font-size="11">LATEST PRICE</text>
+    <text x="43" y="356" fill="#061B33" font-size="20" font-weight="800">249.06</text>
+    <text x="43" y="377" fill="#405976" font-size="13">USD</text>
+    <text x="328" y="333" fill="#60758E" font-size="11">OBSERVATION COUNT</text>
+    <text x="328" y="356" fill="#061B33" font-size="20" font-weight="800">252</text>
+    <text x="328" y="377" fill="#405976" font-size="13">stored daily records</text>
+    <text x="613" y="333" fill="#60758E" font-size="11">TOTAL RETURN</text>
+    <text x="613" y="356" fill="#061B33" font-size="20" font-weight="800">16.22%</text>
+    <text x="613" y="377" fill="#405976" font-size="13">holding-period outcome</text>
+
+    <text x="43" y="447" fill="#60758E" font-size="11">ANNUALIZED RETURN</text>
+    <text x="43" y="470" fill="#061B33" font-size="20" font-weight="800">16.29%</text>
+    <text x="43" y="489" fill="#405976" font-size="13">geometric equivalent</text>
+    <text x="328" y="447" fill="#60758E" font-size="11">ANNUALIZED VOLATILITY</text>
+    <text x="328" y="470" fill="#061B33" font-size="20" font-weight="800">31.76%</text>
+    <text x="328" y="489" fill="#405976" font-size="13">252-day basis</text>
+    <text x="613" y="447" fill="#60758E" font-size="11">MAX DRAWDOWN</text>
+    <text x="613" y="470" fill="#061B33" font-size="20" font-weight="800">-22.99%</text>
+    <text x="613" y="489" fill="#405976" font-size="13">peak-to-trough decline</text>
+
+    <text x="50" y="578" fill="#49647F" font-size="12">EXECUTIVE SUMMARY</text>
+  </g>
+  <text x="50" y="622" fill="#061B33" font-family="Georgia, serif" font-size="16">
+    <tspan x="50" dy="0">Apple Inc. is presented as an equity briefing based on the locally stored historical price record.</tspan>
+    <tspan x="50" dy="24">Over the covered period, the asset delivered a total return of 16.22% and annualized</tspan>
+    <tspan x="50" dy="24">volatility measured 31.76%. Historical downside metrics indicate a maximum drawdown</tspan>
+    <tspan x="50" dy="24">of -22.99% and a one-day 95% historical VaR estimate of 3.09%.</tspan>
+  </text>
+</svg>

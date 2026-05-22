@@ -133,35 +133,29 @@ The system ingests product data from PDFs, URLs, and receipts, extracts structur
     title: "Asset Intelligence Workbench",
     slug: "asset-intelligence-workbench",
     summary:
-      "A SQL-driven financial analysis and decision-support platform integrating market data, sentiment signals, Monte Carlo simulations, and risk analysis.",
-    longDescription: `Asset Intelligence Workbench is a placeholder entry for a financial analysis and decision-support platform.
+      "A SQL-driven financial analysis and decision-support platform integrating market data and external signals for structured financial analysis.",
+    longDescription: `Asset Intelligence Workbench is a SQL-based platform for structured financial analysis and decision support.
 
-Replace this with details about the data model, SQL workflows, market data integrations, sentiment pipeline, simulation methods, risk analytics, and decision-support interface.`,
-    image: "/images/placeholder.svg",
-    tags: ["Financial Modeling", "SQL", "Monte Carlo"],
+The system integrates market data and external signals, supports scenario analysis and sentiment integration, and outputs multi-page reports with risk metrics, simulations, and decision-ready insights.`,
+    image: "/images/asset-intelligence-briefing.svg",
+    tags: ["Financial Modeling", "SQL", "Decision Support"],
     date: "2026",
     featured: true,
     links: [
-      { label: "Demo", url: "https://example.com/asset-intelligence" },
       {
-        label: "GitHub",
-        url: "https://github.com/your-handle/asset-intelligence-workbench",
+        label: "Live App",
+        url: "https://asset-intelligence-workbench-eq2zbxelprxwjnnxendyqp.streamlit.app/",
       },
     ],
-    pdfs: [
-      {
-        label: "System overview",
-        path: "/pdfs/asset-intelligence-workbench.pdf",
-      },
-    ],
+    pdfs: [],
     bullets: [
-      "Integrates market data, sentiment signals, and risk analytics into SQL-driven workflows.",
-      "Uses Monte Carlo simulations to evaluate uncertainty, downside risk, and scenario outcomes.",
-      "Supports investment research and quantitative decision-making through repeatable analysis tools.",
+      "Built a SQL-driven system integrating market data and external signals for structured financial analysis.",
+      "Designed pipelines for scenario analysis, sentiment integration, and decision support.",
+      "Outputs multi-page reports with risk metrics, simulations, and insights.",
     ],
     metrics: [
-      { label: "Data sources", value: "Placeholder" },
-      { label: "Simulations", value: "Placeholder" },
+      { label: "Records", value: "252 sample rows" },
+      { label: "Outputs", value: "Multi-page reports" },
     ],
   },
   {

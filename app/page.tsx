@@ -7,7 +7,6 @@ import { ResearchCard } from "@/components/research-card";
 import { SectionNav } from "@/components/section-nav";
 import { SectionHeader } from "@/components/section-header";
 import { Tag } from "@/components/tag";
-import { contact } from "@/data/contact";
 import { experience } from "@/data/experience";
 import { profile } from "@/data/profile";
 import { research } from "@/data/research";
@@ -18,7 +17,7 @@ export default function Home() {
 
   return (
     <PageShell>
-      <section className="border-b border-line py-20 sm:py-28">
+      <section className="section-reveal border-b border-line py-20 sm:py-28">
         <Container>
           <div className="content-reveal max-w-4xl">
             <p className="font-mono text-xs font-medium uppercase tracking-[0.18em] text-accent">
@@ -44,7 +43,7 @@ export default function Home() {
 
       <FeaturedWork />
 
-      <section className="border-y border-line bg-panel-muted py-14">
+      <section className="section-reveal border-y border-line bg-panel-muted py-14">
         <Container>
           <SectionHeader
             label="Research"
@@ -60,7 +59,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="py-14">
+      <section className="section-reveal py-14">
         <Container>
           <SectionHeader
             label="Experience"
@@ -80,7 +79,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="border-y border-line bg-panel-muted py-14">
+      <section className="section-reveal border-y border-line bg-panel-muted py-14">
         <Container>
           <div className="grid gap-8 lg:grid-cols-[320px_1fr]">
             <SectionHeader
@@ -121,7 +120,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="py-16">
+      <section className="section-reveal py-16">
         <Container>
           <div className="rounded-lg border border-line bg-panel p-6 sm:p-8">
             <p className="font-mono text-xs font-medium uppercase tracking-[0.18em] text-accent">

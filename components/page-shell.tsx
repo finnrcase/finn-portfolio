@@ -24,7 +24,7 @@ export function PageHeader({
   description: string;
 }) {
   return (
-    <section className="border-b border-line py-16 sm:py-20">
+    <section className="section-reveal border-b border-line py-16 sm:py-20">
       <Container>
         <div className="content-reveal">
           <p className="font-mono text-xs font-medium uppercase tracking-[0.18em] text-accent">

@@ -4,7 +4,7 @@ import type { Project } from "@/data/projects";
 import { LinkButton } from "@/components/link-button";
 import { Tag } from "@/components/tag";
 
-export function ProjectCard({ project }: { project: Project }) {
+export function ProjectCard({ project, index = 0 }: { project: Project; index?: number }) {
   const imageHref = project.links[0]?.url ?? `/projects/${project.slug}`;
   const isExternalImageHref = imageHref.startsWith("http");
   const image = (
@@ -20,7 +20,10 @@ export function ProjectCard({ project }: { project: Project }) {
   );
 
   return (
-    <article className="overflow-hidden rounded-lg border border-line bg-panel transition hover:border-foreground/30">
+    <article
+      className="project-card overflow-hidden rounded-lg border border-line bg-panel hover:border-foreground/30"
+      style={{ animationDelay: `${Math.min(index, 6) * 35}ms` }}
+    >
       {isExternalImageHref ? (
         <a href={imageHref} className="block" rel="noreferrer" target="_blank">
           {image}

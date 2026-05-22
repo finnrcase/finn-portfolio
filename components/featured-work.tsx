@@ -12,7 +12,7 @@ export function FeaturedWork() {
   }
 
   return (
-    <section className="py-14">
+    <section className="section-reveal py-14">
       <Container>
         <SectionHeader
           title="Featured work"
@@ -20,8 +20,8 @@ export function FeaturedWork() {
           action={<LinkButton href="/projects">All projects</LinkButton>}
         />
         <div className="grid gap-4 md:grid-cols-2">
-          {featuredProjects.map((project) => (
-            <ProjectCard key={project.slug} project={project} />
+          {featuredProjects.map((project, index) => (
+            <ProjectCard key={project.slug} project={project} index={index} />
           ))}
         </div>
       </Container>

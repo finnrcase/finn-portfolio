@@ -23,26 +23,26 @@ export default function ProjectsPage() {
         description="Projects render from data/projects.ts. Featured work appears first, followed by the full project grid."
       />
       <Container>
-        <section className="py-12">
+        <section className="section-reveal py-12">
           <SectionHeader
             title="Featured projects"
             description="Primary case studies and selected work."
           />
           <div className="grid gap-4 md:grid-cols-2">
-            {featuredProjects.map((project) => (
-              <ProjectCard key={project.slug} project={project} />
+            {featuredProjects.map((project, index) => (
+              <ProjectCard key={project.slug} project={project} index={index} />
             ))}
           </div>
         </section>
 
-        <section className="border-t border-line py-12">
+        <section className="section-reveal border-t border-line py-12">
           <SectionHeader
             title="All projects"
             description="Every project entry currently defined in the data file."
           />
           <div className="grid gap-4 md:grid-cols-2">
-            {[...featuredProjects, ...otherProjects].map((project) => (
-              <ProjectCard key={project.slug} project={project} />
+            {[...featuredProjects, ...otherProjects].map((project, index) => (
+              <ProjectCard key={project.slug} project={project} index={index} />
             ))}
           </div>
         </section>

@@ -20,36 +20,33 @@ export type ExperienceItem = {
 // Keep summary to one short paragraph. Use bullets for the accomplishment-style details.
 export const experience: ExperienceItem[] = [
   {
-    company: "Company Name",
-    role: "Role Title",
-    location: "City, Country",
-    startDate: "2024",
+    company: "RMR Wealth Builders, Inc.",
+    role: "Financial Service Intern",
+    location: "Montclair, New Jersey, United States · Hybrid",
+    startDate: "Jun 2025",
     endDate: "Present",
     summary:
-      "Paste a concise role summary here. Focus on scope, systems, teams, and business or research impact.",
+      "Full-time financial services internship supporting portfolio operations, trading workflows, financial data integrity, billing operations, and advisor decision-making in a regulated wealth management environment.",
     bullets: [
-      "Paste a LinkedIn or resume bullet about a system, product, or workflow you owned.",
-      "Paste a bullet about technical depth, architecture, performance, reliability, or scale.",
-      "Paste a bullet about collaboration, leadership, users, or measurable outcomes.",
+      "Supported portfolio management and trading operations by assisting in account rebalancing workflows, asset allocation adjustments, and performance tracking across client portfolios.",
+      "Worked with large financial datasets across Schwab, Fidelity Wealthscape, Black Diamond, and Salesforce to maintain data integrity, reconcile accounts, and ensure accurate reporting.",
+      "Contributed to billing and revenue operations, helping manage fee schedules, account classifications, and operational processes tied to AUM-based pricing.",
+      "Assisted in portfolio construction research, analyzing diversification strategies, asset class behavior, and risk considerations to support advisor decision-making.",
+      "Collaborated cross-functionally with advisors and operations teams to improve workflow efficiency and reduce manual processing bottlenecks.",
+      "Worked in person over the summer and remotely while at university.",
+      "Series 65 licensed; operate in a regulated environment supporting client portfolio execution under supervision.",
     ],
-    tools: ["TypeScript", "React", "Postgres", "Vercel"],
-    links: [{ label: "Company", url: "https://example.com" }],
-    image: "/images/placeholder.svg",
-  },
-  {
-    company: "Previous Company",
-    role: "Engineer",
-    location: "Remote",
-    startDate: "2022",
-    endDate: "2024",
-    summary:
-      "Use this as a second template entry for prior roles, internships, fellowships, or consulting work.",
-    bullets: [
-      "Owned a clear area of responsibility.",
-      "Shipped measurable product or infrastructure improvements.",
+    tools: [
+      "Schwab",
+      "Fidelity Wealthscape",
+      "Black Diamond",
+      "Salesforce",
+      "Portfolio Management",
+      "Trading Operations",
+      "Data Reconciliation",
+      "Series 65",
     ],
-    tools: ["Node.js", "AWS", "Observability"],
     links: [],
-    image: "/images/placeholder.svg",
+    image: "/images/rmr-wealth.svg",
   },
 ];

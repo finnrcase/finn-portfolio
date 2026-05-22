@@ -1,0 +1,9 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#F8F8F7"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="256" y="205" fill="#A7ABB1" font-size="132" font-weight="800" letter-spacing="-12">rmr</text>
+    <text x="256" y="292" fill="#004C87" font-size="92" font-weight="800" letter-spacing="-3">RMR</text>
+    <text x="256" y="348" fill="#A7ABB1" font-size="30" font-weight="700" letter-spacing="21">WEALTH</text>
+    <rect x="160" y="368" width="192" height="12" fill="#A7ABB1"/>
+  </g>
+</svg>

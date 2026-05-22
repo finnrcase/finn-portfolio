@@ -100,6 +100,36 @@ Replace this with the modeling framework, assumptions, scenario design, carbon a
     ],
   },
   {
+    title: "AI DesignOps Automation Platform",
+    slug: "ai-designops-automation-platform",
+    summary:
+      "An end-to-end DesignOps automation system that replaces manual product data entry and vendor follow-ups with AI-driven workflows.",
+    longDescription: `AI DesignOps Automation Platform is an end-to-end automation system built for a local business to replace manual product data entry and vendor follow-ups.
+
+The system ingests product data from PDFs, URLs, and receipts, extracts structured fields, and identifies missing information such as dimensions or pricing. When product data is incomplete, an AI voice agent automatically calls vendors to retrieve missing details in real time.`,
+    image: "/images/placeholder.svg",
+    tags: ["AI Automation", "Data Ingestion", "Voice Agents"],
+    date: "2026",
+    featured: true,
+    links: [
+      {
+        label: "Call Demo",
+        url: "https://youtu.be/DjBYYnt-ncA?si=3p6mUhBV0Pb-3Fh3",
+      },
+    ],
+    pdfs: [],
+    bullets: [
+      "Built an end-to-end DesignOps automation system for product data ingestion and vendor follow-up workflows.",
+      "Ingests product data from PDFs, URLs, and receipts, then extracts structured fields for downstream use.",
+      "Identifies missing product information such as dimensions, pricing, or vendor-specific details.",
+      "Uses an AI voice agent to call vendors and retrieve incomplete data in real time.",
+    ],
+    metrics: [
+      { label: "Input sources", value: "PDFs, URLs, receipts" },
+      { label: "Automation layer", value: "AI voice calls" },
+    ],
+  },
+  {
     title: "Asset Intelligence Workbench",
     slug: "asset-intelligence-workbench",
     summary:

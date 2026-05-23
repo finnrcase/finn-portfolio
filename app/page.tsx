@@ -36,6 +36,9 @@ export default function Home() {
               <LinkButton href={profile.resumePdf} variant="primary" newTab>
                 Resume
               </LinkButton>
+              <LinkButton href={profile.projectsSummaryPdf} newTab>
+                Projects summary download
+              </LinkButton>
               {github ? (
                 <a
                   href={github}

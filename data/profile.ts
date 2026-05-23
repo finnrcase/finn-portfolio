@@ -7,6 +7,7 @@ export type Profile = {
   bio: string;
   avatar: string;
   resumePdf: string;
+  projectsSummaryPdf: string;
   availability: string;
   focusAreas: string[];
   skills: {
@@ -29,6 +30,7 @@ export const profile: Profile = {
 My portfolio focuses on technical projects, research, and tools that connect rigorous modeling with practical systems. I am especially interested in infrastructure, energy, financial decision-making, and the analytical workflows that make complex systems easier to understand and improve.`,
   avatar: "/images/profile.jpg",
   resumePdf: "/pdfs/resume.pdf",
+  projectsSummaryPdf: "/pdfs/projects-summary.pdf",
   availability: "Open to research, engineering, and quantitative systems work.",
   focusAreas: [
     "AI infrastructure",

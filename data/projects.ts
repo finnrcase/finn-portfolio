@@ -153,6 +153,37 @@ The system ingests product data from PDFs, URLs, and receipts, extracts structur
     ],
   },
   {
+    title: "AISRI - AI Sustainability & Resource Intelligence",
+    slug: "aisri-ai-sustainability-resource-intelligence",
+    summary:
+      "An ESG intelligence platform for evaluating clean energy adoption, infrastructure efficiency, and projected energy demand growth across AI-related companies.",
+    longDescription: `AISRI is an ESG intelligence platform that parses sustainability reports and infrastructure disclosures from AI-related companies to evaluate clean energy adoption, infrastructure efficiency, and projected energy demand growth.
+
+The platform uses a scoring framework that measures sustainability performance, confidence levels, data quality, and forward-looking clean energy requirements tied to AI infrastructure expansion. It supports comparative analysis of how responsibly companies are scaling compute-intensive operations and informs research on AI infrastructure economics, energy systems, and long-term power demand forecasting.`,
+    image: "/images/aisri.png",
+    tags: [
+      "Python",
+      "Streamlit",
+      "ESG/NLP Parsing",
+      "Scoring Models",
+      "Sustainability Analysis",
+    ],
+    date: "2026",
+    featured: true,
+    links: [{ label: "Live App", url: "https://aisridata.streamlit.app/" }],
+    pdfs: [],
+    bullets: [
+      "Built an ESG intelligence platform that parses sustainability reports and infrastructure disclosures from AI-related companies.",
+      "Evaluates clean energy adoption, infrastructure efficiency, and projected energy demand growth.",
+      "Developed a scoring framework for sustainability performance, confidence levels, data quality, and forward-looking clean energy needs.",
+      "Supports comparative analysis of responsible scaling for compute-intensive operations.",
+    ],
+    metrics: [
+      { label: "Analysis focus", value: "AI ESG" },
+      { label: "Framework", value: "Scoring models" },
+    ],
+  },
+  {
     title: "Asset Intelligence Workbench",
     slug: "asset-intelligence-workbench",
     summary:

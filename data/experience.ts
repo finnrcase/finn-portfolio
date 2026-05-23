@@ -90,7 +90,7 @@ export const experience: ExperienceItem[] = [
       "Cohort Analysis",
       "Economic Modeling",
     ],
-    links: [],
+    links: [{ label: "App repository", url: "https://github.com/finnrcase/bloke-app" }],
     image: "/images/kaiizen.png",
   },
   {

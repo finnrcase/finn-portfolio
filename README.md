@@ -1,6 +1,6 @@
 # Finn Case Portfolio
 
-A professional portfolio site built with Next.js, TypeScript, Tailwind CSS, and the App Router. The site is content-driven: projects, research, experience, profile text, contact links, images, and PDFs are edited through simple files in `/data` and `/public`.
+A professional portfolio site built with Next.js, TypeScript, Tailwind CSS, and the App Router. The site is content-driven: projects, research, experience, writing, profile text, contact links, images, and PDFs are edited through simple files in `/data` and `/public`.
 
 ## Tech Stack
 
@@ -40,6 +40,7 @@ Most portfolio content lives in `/data`:
 - `/data/projects.ts`: featured projects and project detail pages
 - `/data/research.ts`: research papers, abstracts, PDFs, links
 - `/data/experience.ts`: roles, bullets, tools, company links
+- `/data/writing.ts`: writing posts and external links
 
 See `/CONTENT_GUIDE.md` for copy/paste templates and detailed editing instructions.
 
@@ -106,6 +107,7 @@ Global metadata is configured in `/app/layout.tsx`. Page-specific titles and des
 - `/app/projects/page.tsx`
 - `/app/research/page.tsx`
 - `/app/experience/page.tsx`
+- `/app/writing/page.tsx`
 - `/app/contact/page.tsx`
 - `/app/projects/[slug]/page.tsx`
 

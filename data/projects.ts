@@ -245,10 +245,10 @@ The platform implements Monte Carlo simulation and stress testing to support ris
     title: "PerformanceOS",
     slug: "performanceos",
     summary:
-      "An adaptive performance analytics and recommendation engine integrating biometric, nutrition, recovery, sleep, and training data.",
-    longDescription: `PerformanceOS is a multi-source performance analytics and recommendation engine that integrates biometric, nutrition, recovery, sleep, and training data.
+      "A multi-source adaptive performance optimization platform for real-time recovery, fueling, and workload recommendations.",
+    longDescription: `PerformanceOS is a multi-source adaptive performance optimization platform that ingests and analyzes longitudinal biometric, nutrition, recovery, sleep, and training telemetry data to generate real-time recovery, fueling, and workload recommendations.
 
-The system dynamically optimizes calorie intake, macro allocation, recovery management, and workout performance. It connects APIs from Hevy, Withings, Fitbit, and Strava into a unified analytics pipeline, then uses adaptive recommendation logic to track bodyweight trends, body composition, sleep quality, training load, recovery metrics, and caloric intake over time.`,
+The system integrates APIs from Hevy, Strava, Fitbit, and Withings into a unified analytics pipeline, normalizes heterogeneous health/performance data streams, and applies adaptive recommendation logic to optimize recovery readiness, calorie allocation, macro timing, training stress, and body composition trends over time.`,
     image: "/images/performanceos-dashboard.svg",
     tags: ["Performance Analytics", "API Integration", "Optimization"],
     date: "2026",
@@ -256,14 +256,16 @@ The system dynamically optimizes calorie intake, macro allocation, recovery mana
     links: [],
     pdfs: [],
     bullets: [
-      "Integrated APIs from Hevy, Withings, Fitbit, and Strava into a unified analytics pipeline for real-time performance monitoring and trend analysis.",
-      "Built adaptive recommendation logic using bodyweight trends, body composition, sleep quality, training load, recovery metrics, and caloric intake data.",
-      "Developed data-driven optimization models to improve performance outcomes, recovery efficiency, and lean mass progression while minimizing fatigue and performance decline.",
-      "Designed interactive dashboards and longitudinal analytics for monitoring workload balance, macro adjustments, recovery readiness, and training adaptation over time.",
+      "Built a multi-source telemetry ingestion and normalization pipeline integrating Hevy, Strava, Fitbit, and Withings APIs into a unified performance analytics system.",
+      "Developed adaptive optimization engines for calorie adjustment, recovery management, training readiness, workload balancing, and macro timing using longitudinal trend analysis across bodyweight, recovery, sleep, activity, and training-load signals.",
+      "Designed real-time recommendation systems for fatigue management, fueling optimization, deload detection, and recoverable training capacity estimation.",
+      "Engineered longitudinal analytics infrastructure for tracking workload progression, recovery degradation, macro adherence, body composition trends, and performance adaptation over time.",
+      "Implemented storage-efficient historical data aggregation, rolling-window analytics, and derived metric generation for scalable long-term telemetry analysis.",
+      "Built interactive operational dashboards for monitoring recovery status, workload distribution, training quality, recovery-risk signals, and adaptive performance recommendations.",
     ],
     metrics: [
-      { label: "Data sources", value: "Hevy, Withings, Fitbit, Strava" },
-      { label: "Optimization focus", value: "Performance + recovery" },
+      { label: "Data sources", value: "Hevy, Strava, Fitbit, Withings" },
+      { label: "Optimization focus", value: "Recovery, fueling, workload" },
     ],
   },
 ];

@@ -16,8 +16,8 @@ export function LinkButton({
 }) {
   const className =
     variant === "primary"
-      ? "inline-flex items-center rounded-md bg-accent px-4 py-2 text-sm font-medium text-background shadow-[0_0_0_1px_rgba(232,106,51,0.18)] transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#f07a45]"
-      : "inline-flex items-center rounded-md border border-line bg-panel px-3 py-2 text-sm font-medium text-foreground transition duration-200 ease-out hover:-translate-y-0.5 hover:border-accent hover:text-accent";
+      ? "link-button link-button-primary"
+      : "link-button link-button-secondary";
 
   if (href.startsWith("/") && !newTab) {
     return (

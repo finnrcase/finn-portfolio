@@ -32,7 +32,7 @@ export function ResearchCard({ item }: { item: ResearchItem }) {
         <div className="mt-5 flex flex-wrap gap-2">
           {item.pdf ? (
             <>
-              <LinkButton href={item.pdf} variant="primary">
+              <LinkButton href={item.pdf} variant="primary" newTab>
                 View PDF
               </LinkButton>
               <LinkButton href={item.pdf} download>

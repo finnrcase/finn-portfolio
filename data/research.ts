@@ -53,4 +53,31 @@ export const research: ResearchItem[] = [
     ],
     status: "Working paper",
   },
+  {
+    title:
+      "Environmental Health Impact Analysis: Air Quality, Asthma, and the Salton Sea",
+    abstract:
+      "Led the quantitative analysis for a research project examining whether worsening environmental conditions around California's Salton Sea contributed to elevated pediatric asthma outcomes. Using R, public health datasets, air quality measurements, demographic controls, and econometric methods, the team evaluated asthma emergency department visit rates across counties and assessed potential environmental health impacts. The analysis applied Difference-in-Differences modeling with clustered standard errors, integrated CHHS, EPA Air Quality System, Census, and environmental monitoring data, and identified a persistent pediatric asthma burden in Imperial County, approximately 2.2x higher than Riverside County, while finding no statistically significant post-2018 deterioration after controlling for COVID-era distortions. The project presented policy recommendations on environmental justice, air quality monitoring, and Salton Sea restoration, earning 1st Place in a university research competition and a $500 award.",
+    date: "2025",
+    authors: ["Finn Case"],
+    tags: [
+      "R",
+      "dplyr",
+      "ggplot2",
+      "Econometrics",
+      "Difference-in-Differences",
+      "Statistical Inference",
+      "Data Visualization",
+      "Public Policy Analysis",
+    ],
+    image: "/images/annual_pm10_imperial_vs_fresno_2016_2025.png",
+    pdf: "/pdfs/salton-sea-project.pdf",
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/finnrcase/salton_sea_asthma_project",
+      },
+    ],
+    status: "Published",
+  },
 ];

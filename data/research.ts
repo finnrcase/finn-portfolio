@@ -50,6 +50,10 @@ export const research: ResearchItem[] = [
         label: "Project page",
         url: "/projects/ai-infrastructure-competitiveness",
       },
+      {
+        label: "GitHub",
+        url: "https://github.com/finnrcase/ai-infrastructure-economics",
+      },
     ],
     status: "In Progress",
   },

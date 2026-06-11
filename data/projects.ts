@@ -60,7 +60,12 @@ The goal is to develop a strategy-oriented framework that combines infrastructur
     ],
     date: "2026",
     featured: true,
-    links: [],
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/finnrcase/ai-infrastructure-economics",
+      },
+    ],
     pdfs: [],
     bullets: [],
     metrics: [

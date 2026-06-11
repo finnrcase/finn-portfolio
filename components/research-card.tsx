@@ -17,7 +17,7 @@ export function ResearchCard({ item }: { item: ResearchItem }) {
       </div>
       <div className="p-5">
         <p className="font-mono text-xs uppercase tracking-[0.16em] text-muted">
-          {item.status} / {item.date}
+          {[item.status, item.category, item.date].filter(Boolean).join(" / ")}
         </p>
         <h2 className="mt-3 text-xl font-semibold tracking-normal">{item.title}</h2>
         <p className="mt-2 text-sm leading-6 text-muted">

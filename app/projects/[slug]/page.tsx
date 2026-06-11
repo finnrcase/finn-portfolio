@@ -88,6 +88,26 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
                 ))}
               </div>
 
+              {project.detailSections?.map((section) => (
+                <section key={section.title} className="mt-10">
+                  <h2 className="text-2xl font-semibold tracking-normal">
+                    {section.title}
+                  </h2>
+                  <p className="mt-4 text-sm leading-7 text-muted">
+                    {section.body}
+                  </p>
+                  {section.bullets?.length ? (
+                    <ul className="mt-4 grid gap-3 text-sm leading-6 text-muted">
+                      {section.bullets.map((bullet) => (
+                        <li key={bullet} className="border-l border-line pl-4">
+                          {bullet}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+                </section>
+              ))}
+
               {project.bullets.length ? (
                 <section className="mt-10">
                   <h2 className="text-2xl font-semibold tracking-normal">Highlights</h2>
@@ -121,23 +141,45 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
                 </div>
               ) : null}
 
-              <div className="mt-6 border-t border-line pt-5">
-                <h2 className="font-mono text-xs uppercase tracking-[0.16em] text-muted">
-                  Links
-                </h2>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {project.links.map((link) => (
-                    <LinkButton key={link.url} href={link.url}>
-                      {link.label}
-                    </LinkButton>
-                  ))}
-                  {project.pdfs.map((pdf) => (
-                    <LinkButton key={pdf.path} href={pdf.path} download>
-                      {pdf.label}
-                    </LinkButton>
-                  ))}
+              {project.metadata?.length ? (
+                <div className="mt-6 border-t border-line pt-5">
+                  <h2 className="font-mono text-xs uppercase tracking-[0.16em] text-muted">
+                    Metadata
+                  </h2>
+                  <div className="mt-4 grid gap-3">
+                    {project.metadata.map((item) => (
+                      <div key={`${item.label}-${item.value}`}>
+                        <p className="font-mono text-xs uppercase tracking-[0.14em] text-muted">
+                          {item.label}
+                        </p>
+                        <p className="mt-1 text-sm leading-6 text-foreground">
+                          {item.value}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              ) : null}
+
+              {project.links.length || project.pdfs.length ? (
+                <div className="mt-6 border-t border-line pt-5">
+                  <h2 className="font-mono text-xs uppercase tracking-[0.16em] text-muted">
+                    Links
+                  </h2>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {project.links.map((link) => (
+                      <LinkButton key={link.url} href={link.url}>
+                        {link.label}
+                      </LinkButton>
+                    ))}
+                    {project.pdfs.map((pdf) => (
+                      <LinkButton key={pdf.path} href={pdf.path} download>
+                        {pdf.label}
+                      </LinkButton>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
             </aside>
           </div>
         </div>

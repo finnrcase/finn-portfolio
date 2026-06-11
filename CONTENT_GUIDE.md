@@ -184,7 +184,7 @@ Open `/data/research.ts` and paste a new object inside the `research` array.
 Allowed `status` values:
 
 ```ts
-"Published" | "Preprint" | "In review" | "Working paper" | "Draft"
+"Published" | "Preprint" | "In review" | "Working paper" | "In Progress" | "Draft"
 ```
 
 ### New Research Paper Template

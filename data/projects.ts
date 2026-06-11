@@ -13,6 +13,12 @@ export type ProjectMetric = {
   value: string;
 };
 
+export type ProjectDetailSection = {
+  title: string;
+  body: string;
+  bullets?: string[];
+};
+
 export type Project = {
   title: string;
   slug: string;
@@ -26,12 +32,85 @@ export type Project = {
   pdfs: ProjectPdf[];
   bullets: string[];
   metrics: ProjectMetric[];
+  metadata?: ProjectMetric[];
+  detailSections?: ProjectDetailSection[];
 };
 
 // Paste project entries from LinkedIn, Notion, GitHub READMEs, case studies, or resume bullets here.
 // Use summary for a short card description and longDescription for the fuller case-study version.
 // Put images in /public/images and PDFs in /public/pdfs, then reference them as /images/placeholder.svg or /pdfs/name.pdf.
 export const projects: Project[] = [
+  {
+    title:
+      "Power, Compute, and Geography: A Quantitative Framework for AI Infrastructure Competitiveness",
+    slug: "ai-infrastructure-competitiveness",
+    summary:
+      "Developing a quantitative framework to evaluate AI infrastructure competitiveness across U.S. states using electricity prices, generation capacity, renewable energy, data center ecosystems, behind-the-meter potential, and interconnection constraints.",
+    longDescription: `This research project investigates how electricity markets, power constraints, and infrastructure characteristics influence the competitiveness of U.S. states for future AI infrastructure deployment.
+
+The goal is to develop a strategy-oriented framework that combines infrastructure economics, energy systems, and quantitative modeling to better understand where and how future AI infrastructure may be deployed.`,
+    image: "/images/MCAIE.png",
+    tags: [
+      "AI Infrastructure",
+      "Energy Economics",
+      "Monte Carlo Simulation",
+      "Infrastructure Strategy",
+      "Capacity Planning",
+      "Python",
+    ],
+    date: "2026",
+    featured: true,
+    links: [],
+    pdfs: [],
+    bullets: [],
+    metrics: [
+      { label: "Status", value: "In Progress" },
+      { label: "Simulations", value: "10,000" },
+    ],
+    metadata: [
+      { label: "Category", value: "Research Project" },
+      { label: "Timeline", value: "2026" },
+      { label: "Role", value: "Independent Researcher" },
+      { label: "Tools", value: "Python, Pandas, NumPy, Matplotlib" },
+      {
+        label: "Focus Areas",
+        value:
+          "Infrastructure Economics, Energy Markets, Capacity Planning, AI Infrastructure, Monte Carlo Simulation",
+      },
+    ],
+    detailSections: [
+      {
+        title: "Research Question",
+        body:
+          "How do electricity markets, generation capacity, renewable energy availability, data center ecosystems, behind-the-meter potential, and interconnection constraints shape state-level competitiveness for future AI infrastructure deployment?",
+      },
+      {
+        title: "Methodology",
+        body:
+          "The project combines state-level competitiveness modeling, Monte Carlo robustness analysis, and behind-the-meter infrastructure economics.",
+        bullets: [
+          "Regional Competitiveness Framework: evaluates states using electricity prices, grid capacity, renewable penetration, data center ecosystems, behind-the-meter potential, and interconnection friction.",
+          "Monte Carlo Robustness Analysis: uses 10,000 simulations with randomized weighting assumptions to identify which states remain competitive across a wide range of possible infrastructure priorities.",
+          "Behind-the-Meter Infrastructure Economics: compares grid power, natural gas generation, solar generation, and hybrid power architectures to evaluate the lowest-cost energy strategies for large-scale AI infrastructure.",
+        ],
+      },
+      {
+        title: "Key Findings",
+        body:
+          "Initial findings focus on the interaction between low-cost power, grid availability, renewable generation, existing data center ecosystems, and deployment friction. The framework is designed to identify states that remain competitive even when infrastructure priorities shift across cost, capacity, reliability, and sustainability assumptions.",
+      },
+      {
+        title: "Visualizations",
+        body:
+          "The featured visualization maps state competitiveness strength against robustness across the Monte Carlo simulation set, highlighting how median competitiveness and score volatility differ across leading states.",
+      },
+      {
+        title: "Future Work",
+        body:
+          "Future work will refine data sources, expand the state-level scoring model, incorporate additional interconnection and power procurement constraints, and translate the framework into a clearer decision tool for AI infrastructure strategy.",
+      },
+    ],
+  },
   {
     title: "Util",
     slug: "util",

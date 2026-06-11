@@ -8,6 +8,7 @@ export type ResearchStatus =
   | "Preprint"
   | "In review"
   | "Working paper"
+  | "In Progress"
   | "Draft";
 
 export type ResearchItem = {
@@ -15,6 +16,7 @@ export type ResearchItem = {
   abstract: string;
   date: string;
   authors: string[];
+  category?: string;
   tags: string[];
   image: string;
   pdf: string;
@@ -25,6 +27,32 @@ export type ResearchItem = {
 // Paste abstracts, author lists, paper links, lab notes, and Notion research summaries here.
 // Keep abstract as the longer research description. Add PDFs to /public/pdfs and images to /public/images.
 export const research: ResearchItem[] = [
+  {
+    title:
+      "Power, Compute, and Geography: A Quantitative Framework for AI Infrastructure Competitiveness",
+    abstract:
+      "Developing a quantitative framework to evaluate AI infrastructure competitiveness across U.S. states using electricity prices, generation capacity, renewable energy, data center ecosystems, behind-the-meter potential, and interconnection constraints. The project combines state-level competitiveness modeling, 10,000 Monte Carlo simulations, and behind-the-meter power economics to analyze how energy markets and grid conditions may influence future AI infrastructure deployment.",
+    date: "2026",
+    authors: ["Finn Case"],
+    category: "Research Project",
+    tags: [
+      "AI Infrastructure",
+      "Energy Economics",
+      "Monte Carlo Simulation",
+      "Infrastructure Strategy",
+      "Capacity Planning",
+      "Python",
+    ],
+    image: "/images/MCAIE.png",
+    pdf: "",
+    links: [
+      {
+        label: "Project page",
+        url: "/projects/ai-infrastructure-competitiveness",
+      },
+    ],
+    status: "In Progress",
+  },
   {
     title:
       "Quantitative Modeling of AI Data Center Emissions Under Alternative Energy Policies",

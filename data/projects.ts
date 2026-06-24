@@ -62,11 +62,20 @@ The goal is to develop a strategy-oriented framework that combines infrastructur
     featured: true,
     links: [
       {
+        label: "View Paper",
+        url: "/pdfs/power-compute-geography-ai-infrastructure-competitiveness.pdf",
+      },
+      {
         label: "GitHub",
         url: "https://github.com/finnrcase/ai-infrastructure-economics",
       },
     ],
-    pdfs: [],
+    pdfs: [
+      {
+        label: "Download Paper",
+        path: "/pdfs/power-compute-geography-ai-infrastructure-competitiveness.pdf",
+      },
+    ],
     bullets: [],
     metrics: [
       { label: "Status", value: "In Progress" },

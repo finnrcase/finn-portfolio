@@ -44,7 +44,7 @@ export const research: ResearchItem[] = [
       "Python",
     ],
     image: "/images/MCAIE.png",
-    pdf: "",
+    pdf: "/pdfs/power-compute-geography-ai-infrastructure-competitiveness.pdf",
     links: [
       {
         label: "Project page",

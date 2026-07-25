@@ -19,14 +19,14 @@ export default function ProjectsPage() {
     <PageShell>
       <PageHeader
         label="Projects"
-        title="Technical work with clear systems, interfaces, and outcomes."
-        description="Projects render from data/projects.ts. Featured work appears first, followed by the full project grid."
+        title="Systems built for real operational and analytical decisions."
+        description="Selected work across AI infrastructure, energy, automation, financial analytics, and optimization."
       />
       <Container>
         <section className="section-reveal py-12">
           <SectionHeader
             title="Featured projects"
-            description="Primary case studies and selected work."
+            description="Primary case studies spanning quantitative research and production-oriented tools."
           />
           <div className="grid gap-4 md:grid-cols-2">
             {featuredProjects.map((project, index) => (
@@ -37,11 +37,11 @@ export default function ProjectsPage() {
 
         <section className="section-reveal border-t border-line py-12">
           <SectionHeader
-            title="All projects"
-            description="Every project entry currently defined in the data file."
+            title="Additional projects"
+            description="Financial analysis, risk modeling, policy research, and performance optimization systems."
           />
           <div className="grid gap-4 md:grid-cols-2">
-            {[...featuredProjects, ...otherProjects].map((project, index) => (
+            {otherProjects.map((project, index) => (
               <ProjectCard key={project.slug} project={project} index={index} />
             ))}
           </div>

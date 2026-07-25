@@ -24,7 +24,7 @@ export type Project = {
   slug: string;
   summary: string;
   longDescription: string;
-  image: string;
+  image?: string;
   tags: string[];
   date: string;
   featured: boolean;
@@ -158,38 +158,44 @@ The platform models tradeoffs between cost, performance, location access, deploy
     ],
   },
   {
-    title: "AI Infrastructure Electricity Demand Research",
-    slug: "ai-infrastructure-electricity-demand-research",
+    title:
+      "Quantitative Modeling of AI Data Center Emissions Under Alternative Energy Policies",
+    slug: "ai-data-center-emissions-policy-model",
     summary:
-      "A quantitative research project modeling AI data center electricity demand, carbon intensity, and policy tradeoffs.",
-    longDescription: `This placeholder entry represents a quantitative research project on AI infrastructure electricity demand.
+      "A quantitative policy model comparing strategies to reduce emissions from AI-driven data centers under uncertainty.",
+    longDescription: `This independent research project evaluates how economic policy can mitigate the environmental impact of AI-driven data centers.
 
-Replace this with the modeling framework, assumptions, scenario design, carbon accounting approach, policy tradeoff analysis, and key findings.`,
+The model estimates baseline emissions and policy-induced abatement using projected 2028 electricity demand and carbon intensity, then compares carbon taxes, clean energy subsidies, dynamic pricing, and clean energy mandates under cost-effectiveness and fiscal tradeoff criteria. A Python extension adds sensitivity analysis, Monte Carlo simulation, downside-risk evaluation, cost-per-ton volatility metrics, and hybrid policy portfolio comparisons.`,
     image: "/images/researchgraph.png",
-    tags: ["AI Infrastructure", "Energy Demand", "Policy Modeling"],
-    date: "2026",
+    tags: [
+      "AI Infrastructure",
+      "Energy Economics",
+      "Carbon Policy",
+      "Monte Carlo Simulation",
+      "Python",
+    ],
+    date: "2025",
     featured: false,
     links: [
-      { label: "Research page", url: "https://example.com/ai-demand-research" },
       {
         label: "Repository",
-        url: "https://github.com/your-handle/ai-demand-research",
+        url: "https://github.com/finnrcase/ai-data-center-policy-model",
       },
-    ],
-    pdfs: [
       {
-        label: "Research brief",
-        path: "/pdfs/ai-infrastructure-electricity-demand.pdf",
+        label: "Zenodo",
+        url: "https://zenodo.org/records/20320804",
       },
     ],
+    pdfs: [],
     bullets: [
-      "Estimates data center electricity demand under multiple AI infrastructure growth scenarios.",
-      "Connects load growth to grid carbon intensity, regional energy mix, and utilization patterns.",
-      "Evaluates policy tradeoffs across reliability, emissions, cost, and infrastructure expansion.",
+      "Modeled projected 2028 electricity demand and carbon intensity to estimate baseline emissions and policy-induced abatement.",
+      "Compared carbon taxes, clean energy subsidies, dynamic pricing, and clean energy mandates using cost-effectiveness and fiscal tradeoff criteria.",
+      "Implemented deterministic modeling, +/-10% sensitivity analysis, 10,000-draw Monte Carlo simulation, and downside-risk evaluation in Python.",
+      "Evaluated cost-per-ton volatility and hybrid policy portfolios under uncertainty.",
     ],
     metrics: [
-      { label: "Scenarios", value: "Placeholder" },
-      { label: "Regions", value: "Placeholder" },
+      { label: "Monte Carlo draws", value: "10,000" },
+      { label: "Sensitivity range", value: "+/-10%" },
     ],
   },
   {
@@ -301,7 +307,7 @@ The system integrates market data and external signals, supports scenario analys
       "Outputs multi-page reports with risk metrics, simulations, and insights.",
     ],
     metrics: [
-      { label: "Records", value: "252 sample rows" },
+      { label: "Data layer", value: "SQL + market signals" },
       { label: "Outputs", value: "Multi-page reports" },
     ],
   },
@@ -342,7 +348,6 @@ The platform implements Monte Carlo simulation and stress testing to support ris
     longDescription: `PerformanceOS is a multi-source adaptive performance optimization platform that ingests and analyzes longitudinal biometric, nutrition, recovery, sleep, and training telemetry data to generate real-time recovery, fueling, and workload recommendations.
 
 The system integrates APIs from Hevy, Strava, Fitbit, and Withings into a unified analytics pipeline, normalizes heterogeneous health/performance data streams, and applies adaptive recommendation logic to optimize recovery readiness, calorie allocation, macro timing, training stress, and body composition trends over time.`,
-    image: "/images/performanceos-dashboard.svg",
     tags: ["Performance Analytics", "API Integration", "Optimization"],
     date: "2026",
     featured: false,

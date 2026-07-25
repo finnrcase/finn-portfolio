@@ -5,17 +5,26 @@ import { LinkButton } from "@/components/link-button";
 import { Tag } from "@/components/tag";
 
 export function ProjectCard({ project, index = 0 }: { project: Project; index?: number }) {
-  const imageHref = project.links[0]?.url ?? `/projects/${project.slug}`;
-  const isExternalImageHref = imageHref.startsWith("http");
   const image = (
     <div className="relative aspect-[16/9] border-b border-line bg-panel-muted">
-      <Image
-        src={project.image}
-        alt=""
-        fill
-        className="object-cover"
-        sizes="(min-width: 768px) 50vw, 100vw"
-      />
+      {project.image ? (
+        <Image
+          src={project.image}
+          alt=""
+          fill
+          className="object-cover"
+          sizes="(min-width: 768px) 50vw, 100vw"
+        />
+      ) : (
+        <div className="flex h-full flex-col justify-end bg-[linear-gradient(135deg,var(--color-panel-muted),var(--color-panel))] p-6">
+          <p className="font-mono text-xs uppercase tracking-[0.16em] text-accent">
+            Project
+          </p>
+          <p className="mt-3 max-w-md text-2xl font-semibold tracking-normal text-foreground">
+            {project.title}
+          </p>
+        </div>
+      )}
     </div>
   );
 
@@ -24,15 +33,9 @@ export function ProjectCard({ project, index = 0 }: { project: Project; index?: 
       className="project-card overflow-hidden rounded-lg border border-line bg-panel hover:border-foreground/30"
       style={{ animationDelay: `${Math.min(index, 6) * 35}ms` }}
     >
-      {isExternalImageHref ? (
-        <a href={imageHref} className="block" rel="noreferrer" target="_blank">
-          {image}
-        </a>
-      ) : (
-        <Link href={imageHref} className="block">
-          {image}
-        </Link>
-      )}
+      <Link href={`/projects/${project.slug}`} className="block">
+        {image}
+      </Link>
       <div className="p-5">
         <p className="font-mono text-xs uppercase tracking-[0.16em] text-muted">
           {project.date}

@@ -16,7 +16,7 @@ export function FeaturedWork() {
       <Container>
         <SectionHeader
           title="Featured work"
-          description="Selected projects pulled directly from data/projects.ts."
+          description="Selected systems and research spanning infrastructure, energy, automation, and quantitative decision-making."
           action={<LinkButton href="/projects">All projects</LinkButton>}
         />
         <div className="grid gap-4 md:grid-cols-2">

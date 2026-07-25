@@ -34,10 +34,10 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <LinkButton href={profile.resumePdf} variant="primary" newTab>
-                Resume
+                Resume (PDF)
               </LinkButton>
               <LinkButton href={profile.projectsSummaryPdf} newTab>
-                Projects summary download
+                Project portfolio (PDF)
               </LinkButton>
               {github ? (
                 <a
@@ -73,8 +73,8 @@ export default function Home() {
         <Container>
           <SectionHeader
             label="Research"
-            title="Research preview"
-            description="Selected research artifacts and technical investigations."
+            title="Selected research"
+            description="Quantitative work on AI infrastructure, energy policy, and environmental economics."
             action={<LinkButton href="/research">All research</LinkButton>}
           />
           <div className="grid gap-4">
@@ -89,16 +89,15 @@ export default function Home() {
         <Container>
           <SectionHeader
             label="Experience"
-            title="Experience preview"
-            description="Recent roles and operating context."
+            title="Selected experience"
+            description="Roles spanning financial operations, education, economic strategy, and entrepreneurship."
             action={<LinkButton href="/experience">Full experience</LinkButton>}
           />
           <div>
-            {previewExperience.map((item, index) => (
+            {previewExperience.map((item) => (
               <ExperienceCard
                 key={`${item.company}-${item.role}`}
                 item={item}
-                index={index}
               />
             ))}
           </div>
@@ -109,7 +108,7 @@ export default function Home() {
         <Container>
           <div className="grid gap-8 lg:grid-cols-[320px_1fr]">
             <SectionHeader
-              title="Interested in compute infrastructure, infrastructure economics, financial analytics, and data-driven optimization systems."
+              title="Areas of focus"
             />
             <div>
               <div className="space-y-4 text-sm leading-7 text-muted">
@@ -147,12 +146,17 @@ export default function Home() {
       <section className="section-reveal py-16">
         <Container>
           <div className="rounded-lg border border-line bg-panel p-6 sm:p-8">
-            <div className="flex items-center justify-between gap-4">
-              <p className="font-mono text-xs font-medium uppercase tracking-[0.18em] text-accent">
-                Contact
-              </p>
+            <div className="flex flex-col items-start justify-between gap-5 sm:flex-row sm:items-center">
+              <div>
+                <p className="font-mono text-xs font-medium uppercase tracking-[0.18em] text-accent">
+                  Open to opportunities
+                </p>
+                <h2 className="mt-3 text-xl font-semibold tracking-normal">
+                  {profile.availability}
+                </h2>
+              </div>
               <LinkButton href="/contact" variant="primary">
-                Contact
+                Get in touch
               </LinkButton>
             </div>
           </div>

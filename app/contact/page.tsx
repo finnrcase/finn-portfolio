@@ -14,11 +14,11 @@ export default function ContactPage() {
     <PageShell>
       <PageHeader
         label="Contact"
-        title="A direct way to reach out."
-        description="Update your email, location, preferred contact note, and external links in data/contact.ts."
+        title="Let’s discuss research, quantitative systems, or technical work."
+        description={contact.intro}
       />
       <Container>
-        <div className="grid gap-4 py-12 md:grid-cols-3">
+        <div className="grid gap-4 py-12 md:grid-cols-2">
           <div className="rounded-lg border border-line bg-panel p-5 md:col-span-2">
             <p className="font-mono text-xs uppercase tracking-[0.16em] text-muted">
               Email
@@ -32,7 +32,24 @@ export default function ContactPage() {
           </div>
           <div className="rounded-lg border border-line bg-panel p-5">
             <p className="font-mono text-xs uppercase tracking-[0.16em] text-muted">
-              Links
+              Contact details
+            </p>
+            <dl className="mt-4 grid gap-4 text-sm leading-6">
+              <div>
+                <dt className="text-muted">Location</dt>
+                <dd className="font-medium text-foreground">{contact.location}</dd>
+              </div>
+              <div>
+                <dt className="text-muted">Preferred contact</dt>
+                <dd className="font-medium text-foreground">
+                  {contact.preferredContact}
+                </dd>
+              </div>
+            </dl>
+          </div>
+          <div className="rounded-lg border border-line bg-panel p-5">
+            <p className="font-mono text-xs uppercase tracking-[0.16em] text-muted">
+              Professional profiles
             </p>
             <div className="mt-4 grid gap-3">
               {contact.links.map((link) => (

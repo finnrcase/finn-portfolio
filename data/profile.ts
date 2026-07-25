@@ -20,7 +20,7 @@ export type Profile = {
 // Good sources: LinkedIn headline, About section, resume summary, or a short Notion bio.
 export const profile: Profile = {
   name: "Finn Case",
-  headline: "Quantitive Economics UCLA MQE | Economics UCSB",
+  headline: "Quantitative Economics · UCLA MQE · UC Santa Barbara",
   role: "Quantitative Economics • AI Infrastructure • Systems Optimization",
   location: "United States",
   summary:

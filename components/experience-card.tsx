@@ -5,10 +5,8 @@ import { Tag } from "@/components/tag";
 
 export function ExperienceCard({
   item,
-  index,
 }: {
   item: ExperienceItem;
-  index: number;
 }) {
   return (
     <article className="grid gap-6 border-b border-line py-8 first:pt-0 last:border-b-0 md:grid-cols-[220px_1fr]">
@@ -22,10 +20,7 @@ export function ExperienceCard({
         <p className="mt-2 text-sm text-muted">{item.location}</p>
       </div>
       <div>
-        <p className="font-mono text-xs uppercase tracking-[0.16em] text-accent">
-          Role {index + 1}
-        </p>
-        <h2 className="mt-3 text-2xl font-semibold tracking-normal">
+        <h2 className="text-2xl font-semibold tracking-normal">
           {item.role}, {item.company}
         </h2>
         <p className="mt-4 max-w-3xl text-sm leading-6 text-muted">

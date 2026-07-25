@@ -68,16 +68,18 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
 
       <Container>
         <div className="py-12">
-          <div className="relative aspect-[16/9] overflow-hidden rounded-lg border border-line bg-panel-muted">
-            <Image
-              src={project.image}
-              alt=""
-              fill
-              className="object-cover"
-              sizes="100vw"
-              priority
-            />
-          </div>
+          {project.image ? (
+            <div className="relative aspect-[16/9] overflow-hidden rounded-lg border border-line bg-panel-muted">
+              <Image
+                src={project.image}
+                alt=""
+                fill
+                className="object-cover"
+                sizes="100vw"
+                priority
+              />
+            </div>
+          ) : null}
 
           <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_320px]">
             <article className="max-w-3xl">
@@ -144,7 +146,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
               {project.metadata?.length ? (
                 <div className="mt-6 border-t border-line pt-5">
                   <h2 className="font-mono text-xs uppercase tracking-[0.16em] text-muted">
-                    Metadata
+                    Project details
                   </h2>
                   <div className="mt-4 grid gap-3">
                     {project.metadata.map((item) => (

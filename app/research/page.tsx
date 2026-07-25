@@ -15,8 +15,8 @@ export default function ResearchPage() {
     <PageShell>
       <PageHeader
         label="Research"
-        title="Research artifacts, technical reports, and applied investigations."
-        description="Research items render from data/research.ts, including abstracts, authors, status, links, and PDF actions."
+        title="Applied research in infrastructure, energy, and environmental economics."
+        description="Technical papers and quantitative investigations using econometrics, simulation, and policy analysis."
       />
       <Container>
         <div className="grid gap-4 py-12">

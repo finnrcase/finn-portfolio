@@ -15,16 +15,15 @@ export default function ExperiencePage() {
     <PageShell>
       <PageHeader
         label="Experience"
-        title="Engineering roles, collaborations, and operating context."
-        description="Experience entries render from data/experience.ts with tools, links, images, and LinkedIn-style bullets."
+        title="Experience across finance, education, economic strategy, and entrepreneurship."
+        description="Roles combining quantitative analysis, technical development, operations, and decision support."
       />
       <Container>
         <div className="py-12">
-          {experience.map((item, index) => (
+          {experience.map((item) => (
             <ExperienceCard
               key={`${item.company}-${item.role}`}
               item={item}
-              index={index}
             />
           ))}
         </div>

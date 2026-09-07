@@ -13,8 +13,10 @@ export const siteConfig = {
 
 export const navItems = [
   { label: "Home", href: "/" },
+  { label: "Academics", href: "/academics" },
+  { label: "Certifications", href: "/certifications" },
+  { label: "Experience", href: "/experience" },
   { label: "Projects", href: "/projects" },
   { label: "Research", href: "/research" },
-  { label: "Experience", href: "/experience" },
   { label: "Contact", href: "/contact" },
 ];

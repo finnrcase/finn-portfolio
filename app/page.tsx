@@ -1,3 +1,4 @@
+import { AcademicCards } from "@/components/academic-cards";
 import { Container } from "@/components/container";
 import { ExperienceCard } from "@/components/experience-card";
 import { FeaturedWork } from "@/components/featured-work";
@@ -67,6 +68,35 @@ export default function Home() {
         </Container>
       </section>
 
+      <section id="academics" className="section-reveal border-b border-line bg-panel-muted py-14">
+        <Container>
+          <SectionHeader
+            title="Academics"
+            action={<LinkButton href="/academics">Academic background</LinkButton>}
+          />
+          <AcademicCards />
+        </Container>
+      </section>
+
+      <section className="section-reveal py-14">
+        <Container>
+          <SectionHeader
+            label="Experience"
+            title="Professional experience"
+            description="Roles spanning financial operations, economic strategy, and entrepreneurship."
+            action={<LinkButton href="/experience">Full experience</LinkButton>}
+          />
+          <div>
+            {previewExperience.map((item) => (
+              <ExperienceCard
+                key={`${item.company}-${item.role}`}
+                item={item}
+              />
+            ))}
+          </div>
+        </Container>
+      </section>
+
       <FeaturedWork />
 
       <section className="section-reveal border-y border-line bg-panel-muted py-14">
@@ -80,25 +110,6 @@ export default function Home() {
           <div className="grid gap-4">
             {featuredResearch.map((item) => (
               <ResearchCard key={item.title} item={item} />
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      <section className="section-reveal py-14">
-        <Container>
-          <SectionHeader
-            label="Experience"
-            title="Selected experience"
-            description="Roles spanning financial operations, education, economic strategy, and entrepreneurship."
-            action={<LinkButton href="/experience">Full experience</LinkButton>}
-          />
-          <div>
-            {previewExperience.map((item) => (
-              <ExperienceCard
-                key={`${item.company}-${item.role}`}
-                item={item}
-              />
             ))}
           </div>
         </Container>

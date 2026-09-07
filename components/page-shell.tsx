@@ -30,7 +30,7 @@ export function PageHeader({
           <p className="font-mono text-xs font-medium uppercase tracking-[0.18em] text-accent">
             {label}
           </p>
-          <h1 className="mt-5 max-w-4xl text-4xl font-semibold tracking-normal text-foreground sm:text-5xl">
+          <h1 className="mt-5 max-w-4xl wrap-break-word text-4xl font-semibold tracking-normal text-foreground sm:text-5xl">
             {title}
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-7 text-muted sm:text-lg">

@@ -1,3 +1,5 @@
+import { kelvoltaPublicExperience } from "./kelvolta.ts";
+
 export type ExperienceLink = {
   label: string;
   url: string;
@@ -9,16 +11,17 @@ export type ExperienceItem = {
   location: string;
   startDate: string;
   endDate: string;
-  summary: string;
-  bullets: string[];
-  tools: string[];
-  links: ExperienceLink[];
-  image: string;
+  summary?: string;
+  bullets: readonly string[];
+  tools: readonly string[];
+  links: readonly ExperienceLink[];
+  image?: string;
 };
 
 // Paste LinkedIn role descriptions, resume bullets, company links, and Notion notes here.
 // Keep summary to one short paragraph. Use bullets for the accomplishment-style details.
 export const experience: ExperienceItem[] = [
+  kelvoltaPublicExperience,
   {
     company: "RMR Wealth Builders, Inc.",
     role: "Financial Service Intern",
@@ -48,23 +51,6 @@ export const experience: ExperienceItem[] = [
     ],
     links: [],
     image: "/images/RMR.png",
-  },
-  {
-    company: "UC Santa Barbara",
-    role: "Teaching Assistant - Game Theory",
-    location: "Hybrid",
-    startDate: "Sep 2025",
-    endDate: "Present",
-    summary:
-      "Part-time teaching assistant role supporting Game Theory students through problem-set guidance, project feedback, office hours, and exam review with an emphasis on formal modeling and quantitative reasoning.",
-    bullets: [
-      "Supported students in solving problem sets and project work, reinforcing formal modeling and quantitative reasoning.",
-      "Held office hours to clarify complex theoretical concepts and improve analytical precision.",
-      "Reviewed exams and projects to ensure clarity of argument and precision in modeling.",
-    ],
-    tools: ["Game Theory", "Analytical Problem Solving", "Formal Modeling"],
-    links: [],
-    image: "/images/UC_Santa_Barbara_Seal.png",
   },
   {
     company: "Kaiizen Foundation",

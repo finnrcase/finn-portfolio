@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Tag } from "@/components/tag";
 import { academics } from "@/data/academics";
@@ -12,6 +13,15 @@ export function AcademicCards({ headingLevel = 3 }: { headingLevel?: 2 | 3 }) {
           className="grid gap-6 rounded-lg border border-line bg-panel p-5 sm:p-6 md:grid-cols-[220px_1fr]"
         >
           <div>
+            <div className="relative mb-4 aspect-[4/3] overflow-hidden rounded-lg border border-line bg-panel-muted">
+              <Image
+                src={item.image}
+                alt={item.imageAlt}
+                fill
+                sizes="(min-width: 768px) 220px, (min-width: 640px) 80vw, 90vw"
+                className="object-cover"
+              />
+            </div>
             <p className="font-mono text-xs font-medium uppercase tracking-[0.18em] text-accent">
               {item.abbreviation}
             </p>

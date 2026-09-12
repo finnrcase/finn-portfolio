@@ -1,6 +1,8 @@
 export type AcademicEntry = {
   university: string;
   abbreviation: string;
+  image: string;
+  imageAlt: string;
   degree: string;
   startDate: string;
   endDate: string;
@@ -18,6 +20,8 @@ export const academics: AcademicEntry[] = [
   {
     university: "University of California, Los Angeles",
     abbreviation: "UCLA",
+    image: "/images/academics/ucla.jpg",
+    imageAlt: "Royce Hall on the UCLA campus",
     degree: "Master of Quantitative Economics (MQE)",
     startDate: "September 2026",
     endDate: "June 2027",
@@ -29,10 +33,13 @@ export const academics: AcademicEntry[] = [
       "SQL and Data Management",
       "Principles of Big Data Management Systems",
     ],
+    activities: [{ title: "Graduate AI Committee — Member" }],
   },
   {
     university: "University of California, Santa Barbara",
     abbreviation: "UCSB",
+    image: "/images/academics/ucsb.jpg",
+    imageAlt: "UC Santa Barbara campus and its coastal setting at Campus Point",
     degree: "Bachelor’s Degree, Economics",
     startDate: "September 2024",
     endDate: "June 2026",

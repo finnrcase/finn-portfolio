@@ -29,9 +29,9 @@ export const profile: Profile = {
 
 My portfolio focuses on technical projects, research, and tools that connect rigorous modeling with practical systems. I am especially interested in infrastructure, energy, financial decision-making, and the analytical workflows that make complex systems easier to understand and improve.`,
   avatar: "/images/profile.jpg",
-  resumePdf: "/pdfs/resume.pdf",
+  resumePdf: "/pdfs/nvidia-resume.pdf",
   projectsSummaryPdf: "/pdfs/projects-summary.pdf",
-  availability: "Open to research, engineering, and quantitative systems work.",
+  availability: "Open to research and quantitative systems work.",
   focusAreas: [
     "AI infrastructure",
     "Energy systems",

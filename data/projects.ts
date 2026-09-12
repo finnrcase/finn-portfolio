@@ -34,12 +34,101 @@ export type Project = {
   metrics: ProjectMetric[];
   metadata?: ProjectMetric[];
   detailSections?: ProjectDetailSection[];
+  presentation?: "inline";
+  category?: string;
+  status?: string;
+  currentStage?: string;
+  researchProcess?: string[];
 };
 
 // Paste project entries from LinkedIn, Notion, GitHub READMEs, case studies, or resume bullets here.
 // Use summary for a short card description and longDescription for the fuller case-study version.
 // Put images in /public/images and PDFs in /public/pdfs, then reference them as /images/placeholder.svg or /pdfs/name.pdf.
 export const projects: Project[] = [
+  {
+    title: "NVIDIA Demand Shocks & Cross-Firm Return Predictability",
+    slug: "nvidia-demand-shocks-cross-firm-return-predictability",
+    presentation: "inline",
+    category: "Quantitative Finance / Empirical Asset Pricing Research",
+    date: "07/2026 - Present",
+    status: "In Progress",
+    featured: true,
+    summary:
+      "Unexpected NVIDIA AI-infrastructure demand shocks may predict delayed abnormal returns among economically exposed public companies, with the magnitude of the response varying according to each firm’s economic exposure to NVIDIA and AI-infrastructure demand.",
+    longDescription:
+      "This research tests whether NVIDIA demand information is incorporated immediately across economically connected firms or diffuses gradually through the market. Differences in adjustment speed could reveal how information propagates through technology supply chains and capital markets.",
+    currentStage:
+      "Currently building the point-in-time event and exposure datasets and implementing the empirical testing framework.",
+    researchProcess: [
+      "Identify NVIDIA demand events",
+      "Measure unexpected shocks",
+      "Estimate firm exposure",
+      "Measure delayed abnormal returns",
+      "Test Shock × Exposure",
+      "Evaluate robustness and validation",
+    ],
+    tags: [
+      "Event Studies",
+      "Empirical Asset Pricing",
+      "Fama-French Factors",
+      "Cross-Sectional Regression",
+      "Robust Inference",
+      "Point-in-Time Data",
+      "SEC Filings",
+      "Python",
+      "Walk-Forward Validation",
+    ],
+    links: [],
+    pdfs: [],
+    bullets: [],
+    metrics: [],
+    detailSections: [
+      {
+        title: "Point-in-time event data",
+        body: "Constructing a canonical NVIDIA demand-event dataset from contemporaneous SEC filings, earnings releases, earnings calls, guidance, and other primary-source announcements. Timestamps will preserve when information became available to the market to prevent look-ahead bias.",
+      },
+      {
+        title: "Demand-shock measurement",
+        body: "The planned shock measure uses abnormal NVIDIA returns around identified events to estimate the direction and magnitude of unexpected information, rather than treating every announcement as an equally important shock.",
+      },
+      {
+        title: "Economic exposure",
+        body: "Developing complementary fundamental and market-implied exposure measures. Fundamental exposure considers direct commercial relationships, AI/data-center revenue, product complementarity, infrastructure positioning, and textual evidence from point-in-time disclosures. Market-implied exposure will estimate historical return sensitivity to NVIDIA-related movements using information available before each event.",
+      },
+      {
+        title: "Immediate versus delayed adjustment",
+        body: "The event-study framework will separate announcement-day reactions from subsequent price adjustment. The primary delayed-return window is approximately day 1 through day 10 following an event; the announcement-day response itself will not be interpreted as predictability.",
+      },
+      {
+        title: "Factor-adjusted returns",
+        body: "Planned specifications include Fama-French factor models and momentum controls where appropriate, to evaluate whether delayed-return patterns remain after accounting for broad systematic risk factors.",
+      },
+      {
+        title: "Cross-sectional tests",
+        body: "The core relationship is NVIDIA Shock × Firm Exposure → Delayed Abnormal Return. Planned regressions will test whether more exposed firms exhibit stronger delayed responses, with firm/event controls and fixed effects where justified.",
+      },
+      {
+        title: "Robust statistical inference",
+        body: "Evaluating clustered standard errors, event-level inference, and bootstrap procedures to account for repeated observations across firms and NVIDIA events and avoid overstating evidence from correlated observations.",
+      },
+      {
+        title: "Falsification and placebo tests",
+        body: "Planned tests include randomized event dates, shuffled exposure measures, non-NVIDIA comparison events, low-exposure control firms, lead tests, and matched control groups. These tests will evaluate whether any apparent effect reflects information diffusion rather than coincidence, market-wide movement, or research-design artifacts.",
+      },
+      {
+        title: "Tradability and transaction costs",
+        body: "If a statistically meaningful effect is identified, subsequent analysis will evaluate execution after the information event using only information available in real time, under multiple transaction-cost assumptions. A profitable strategy is not an established result.",
+      },
+      {
+        title: "Pseudo-out-of-sample validation",
+        body: "Planned walk-forward testing will separate model construction and calibration from later evaluation periods. The design will address look-ahead bias, data leakage, survivorship bias, multiple testing, and overfitting rather than optimizing the methodology on the full historical sample.",
+      },
+      {
+        title: "Research standard",
+        body: "A null result is a valid research outcome. The objective is to determine whether economically linked firms exhibit measurable delayed information incorporation; the hypothesis remains unconfirmed.",
+      },
+    ],
+  },
   {
     title:
       "Power, Compute, and Geography: A Quantitative Framework for AI Infrastructure Competitiveness",

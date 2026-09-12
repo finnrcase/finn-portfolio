@@ -14,7 +14,7 @@ type ProjectDetailPageProps = {
 };
 
 export function generateStaticParams() {
-  return projects.map((project) => ({
+  return projects.filter((project) => project.presentation !== "inline").map((project) => ({
     slug: project.slug,
   }));
 }
@@ -25,7 +25,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const project = projects.find((item) => item.slug === slug);
 
-  if (!project) {
+  if (!project || project.presentation === "inline") {
     return {
       title: "Project not found",
     };
@@ -41,7 +41,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
   const { slug } = await params;
   const project = projects.find((item) => item.slug === slug);
 
-  if (!project) {
+  if (!project || project.presentation === "inline") {
     notFound();
   }
 

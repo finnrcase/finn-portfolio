@@ -3,8 +3,13 @@ import Link from "next/link";
 import type { Project } from "@/data/projects";
 import { LinkButton } from "@/components/link-button";
 import { Tag } from "@/components/tag";
+import { InlineResearchCard } from "@/components/inline-research-card";
 
 export function ProjectCard({ project, index = 0 }: { project: Project; index?: number }) {
+  if (project.presentation === "inline") {
+    return <InlineResearchCard project={project} />;
+  }
+
   const image = (
     <div className="relative aspect-[16/9] border-b border-line bg-panel-muted">
       {project.image ? (
